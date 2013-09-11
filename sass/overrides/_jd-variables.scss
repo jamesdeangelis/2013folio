@@ -4,16 +4,19 @@
 // Grays
 // -------------------------
 
-$gray-dark:              #4b5055;   // DIN headings
+$gray-darkest: 			 #13131a;	// Footer color
+$gray-darker: 			 #191c22;   // BG colour
+$gray-dark:              #4b5055;   // DIN titles
 $gray:                   #737c7f;	// body
 $gray-blue: 			 #e3edff;   // Highlights and headings
-$gray-light:             lighten(#000, 60%);   // #999
-$gray-lighter:           lighten(#000, 93.5%); // #eee
+$gray-light:             #a4afb1;	// titles on lightBG
+$gray-lighter:           #e0e0e0;	// borders on lightBg
 
 // Brand colors
 // -------------------------
 
 $brand-primary:         #2980b9;
+$dark-blue: 			#183355;
 $brand-success:         #5cb85c;
 $brand-warning:         #f0ad4e;
 $brand-danger:          #d9534f;
@@ -34,12 +37,12 @@ $link-hover-color:      darken($link-color, 15%);
 // Typography
 // -------------------------
 
-$font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-sans-serif:  "ff-din-web", Verdana, sans-serif;
 $font-family-serif:       Georgia, "Times New Roman", Times, serif;
 $font-family-monospace:   Monaco, Menlo, Consolas, "Courier New", monospace;
 $font-family-base:        $font-family-sans-serif;
 
-$font-size-base:          14px;
+$font-size-base:          18px;
 $font-size-large:         ceil($font-size-base * 1.25); // ~18px
 $font-size-small:         ceil($font-size-base * 0.85); // ~12px
 
@@ -73,9 +76,9 @@ $padding-small-horizontal:       10px;
 $line-height-large:              1.33;
 $line-height-small:              1.5;
 
-$border-radius-base:             4px;
+$border-radius-base:             3px;
 $border-radius-large:            6px;
-$border-radius-small:            3px;
+$border-radius-small:            2px;
 
 $component-active-bg:            $brand-primary;
 
@@ -231,17 +234,17 @@ $grid-float-breakpoint:     $screen-tablet;
 // -------------------------
 
 // Basics of a navbar
-$navbar-height:                    50px;
+$navbar-height:                    80px;
 $navbar-margin-bottom:             $line-height-computed;
 $navbar-default-color:             #777;
 $navbar-default-bg:                #f8f8f8;
-$navbar-default-border:            darken($navbar-default-bg, 6.5%);
-$navbar-border-radius:             $border-radius-base;
+$navbar-default-border:            $gray-lighter;
+$navbar-border-radius:             none;
 $navbar-padding-horizontal:        floor($grid-gutter-width / 2);
 $navbar-padding-vertical:          (($navbar-height - $line-height-computed) / 2);
 
 // Navbar links
-$navbar-default-link-color:                #777;
+$navbar-default-link-color:                $gray-blue;
 $navbar-default-link-hover-color:          #333;
 $navbar-default-link-hover-bg:             transparent;
 $navbar-default-link-active-color:         #555;
@@ -250,7 +253,7 @@ $navbar-default-link-disabled-color:       #ccc;
 $navbar-default-link-disabled-bg:          transparent;
 
 // Navbar brand label
-$navbar-default-brand-color:               $navbar-default-link-color;
+$navbar-default-brand-color:               $gray-light;
 $navbar-default-brand-hover-color:         darken($navbar-default-link-color, 10%);
 $navbar-default-brand-hover-bg:            transparent;
 
@@ -348,7 +351,7 @@ $pager-disabled-color:                 $gray-light;
 // -------------------------
 
 $jumbotron-padding:              5%;
-$jumbotron-color:                inherit;
+$jumbotron-color:                $dark-blue;
 $jumbotron-bg:                   transparent;
 
 $jumbotron-heading-color:        inherit;

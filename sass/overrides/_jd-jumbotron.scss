@@ -1,0 +1,12 @@
+.container {
+	.jumbotron {
+	  margin-bottom: $jumbotron-padding;
+	  font-size: ($font-size-base * 1.5);
+	  padding-right: 5%;
+
+	  h1 {
+	    line-height: 1.1;
+	    letter-spacing: -3px;
+		}
+	}
+}
