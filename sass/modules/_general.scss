@@ -2,10 +2,6 @@ body {
 	-webkit-font-smoothing: antialiased;
 }
 
-footer {
-	background-color: #13131a;
-}
-
 .section-down {
 	.icon-chevron-down {
 		color: $gray-light;
@@ -25,4 +21,17 @@ footer {
 	position: relative;
 	top: 6px;
 	left: 10px;
+	color: $brand-primary;
 }
+
+.work-group {
+	margin: 4em 0 7em;
+}
+.work-row {
+	overflow: hidden;
+	margin-bottom: 2em;
+}
+.work-group-heading {
+	margin-bottom: .7em;
+}
+

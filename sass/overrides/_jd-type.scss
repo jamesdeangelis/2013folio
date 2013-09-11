@@ -1,23 +1,30 @@
-h1,
-.h1 { 
+h1, .h1 { 
 	font-size: floor($font-size-base * 4); // ~72px
 	letter-spacing: -3px;
-} 
+	color: $gray-blue;
+}
 
-h2, .h2 { font-size: floor($font-size-base * 3.15); } // ~60px
-h3, .h3 { font-size: ceil($font-size-base * 1.70); } // ~24px
-h4, .h4 { font-size: ceil($font-size-base * 1.25); } // ~18px
-h5, .h5 { font-size:  $font-size-base; }
-h6, .h6 { font-size: ceil($font-size-base * 0.85); } // ~12px
+h2, .h2 {
+	font-size: ceil($font-size-base * 3.33); // ~60px
+	letter-spacing: -3px;
+	color: $gray-blue;
+	margin-bottom: .4em;
+}
+
+h3, .h3 {
+	font-size: floor($font-size-base * 1.67); // ~30px
+	font-weight: 500;
+} 
 
 h4, .h4 {
 	font-family: $font-family-sans-serif;
-	font-size: 67%;
+	font-size: 67%; // ~12px
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
-	color: $gray-light;
+	color: $gray;
+	margin-bottom: 1.5em;
 }
 
 small { 
@@ -26,4 +33,13 @@ small {
 	letter-spacing: 1px;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
+}
+
+a {
+	transition: all 0.2s ease;
+}
+
+a:hover,
+a:focus {
+	text-decoration: none;
 }

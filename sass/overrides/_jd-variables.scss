@@ -5,6 +5,7 @@
 // -------------------------
 
 $gray-darkest: 			 #13131a;	// Footer color
+$gray-line: 			 #272a2f;	// Dark borders
 $gray-darker: 			 #191c22;   // BG colour
 $gray-dark:              #4b5055;   // DIN titles
 $gray:                   #737c7f;	// body
@@ -25,14 +26,14 @@ $brand-info:            #5bc0de;
 // Scaffolding
 // -------------------------
 
-$body-bg:               #f7f7f7;
+$body-bg:               $gray-darker;
 $text-color:            $gray-dark;
 
 // Links
 // -------------------------
 
 $link-color:            $brand-primary;
-$link-hover-color:      darken($link-color, 15%);
+$link-hover-color:      lighten($link-color, 15%);
 
 // Typography
 // -------------------------
@@ -225,7 +226,7 @@ $screen-md-max:              ($screen-lg - 1);
 // Number of columns in the grid system
 $grid-columns:              12;
 // Padding, to be divided by two and applied to the left and right of all columns
-$grid-gutter-width:         30px;
+$grid-gutter-width:         40px;
 // Point at which the navbar stops collapsing
 $grid-float-breakpoint:     $screen-tablet;
 
@@ -245,11 +246,11 @@ $navbar-padding-vertical:          (($navbar-height - $line-height-computed) / 2
 
 // Navbar links
 $navbar-default-link-color:                $gray-blue;
-$navbar-default-link-hover-color:          #333;
+$navbar-default-link-hover-color:          $brand-primary;
 $navbar-default-link-hover-bg:             transparent;
 $navbar-default-link-active-color:         #555;
-$navbar-default-link-active-bg:            darken($navbar-default-bg, 6.5%);
-$navbar-default-link-disabled-color:       #ccc;
+$navbar-default-link-active-bg:            transparent;
+$navbar-default-link-disabled-color:       transparent;
 $navbar-default-link-disabled-bg:          transparent;
 
 // Navbar brand label
@@ -609,10 +610,10 @@ $component-offset-horizontal: 180px;
 // --------------------------------------------------
 
 // Small screen / tablet
-$container-tablet:            ((720px + $grid-gutter-width));
+$container-tablet:            ((480px + $grid-gutter-width));
 
 // Medium screen / desktop
-$container-desktop:           ((940px + $grid-gutter-width));
+$container-desktop:           ((720px + $grid-gutter-width));
 
 // Large screen / wide desktop
-$container-lg-desktop:        ((1140px + $grid-gutter-width));
+$container-lg-desktop:        ((980px + $grid-gutter-width));
