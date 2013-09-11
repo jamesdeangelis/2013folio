@@ -71,7 +71,7 @@
 // CSS image replacement
 // Source: https://github.com/h5bp/html5-boilerplate/commit/aa0396eae757
 @mixin hide-text() {
-  font: #{0/0} a;
+  font: 0/0 a;
   color: transparent;
   text-shadow: none;
   background-color: transparent;
@@ -106,6 +106,7 @@
   -webkit-box-shadow: $shadow; // iOS <4.3 & Android <4.1
           box-shadow: $shadow;
 }
+
 
 // Transitions
 @mixin transition($transition...) {
@@ -211,7 +212,7 @@
   opacity: $opacity;
   // IE8 filter
   $opacity-ie: ($opacity * 100);
-  filter: #{alpha(opacity=$opacity-ie)};
+  filter: alpha(opacity=$opacity-ie);
 }
 
 
@@ -298,7 +299,7 @@
 // Short retina mixin for setting background-image and -size
 
 @mixin img-retina($file-1x, $file-2x, $width-1x, $height-1x) {
-  background-image: image-url("#{$file-1x}");
+  background-image: url("#{$file-1x}");
 
   @media
   only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -307,7 +308,7 @@
   only screen and (        min-device-pixel-ratio: 2),
   only screen and (                min-resolution: 192dpi),
   only screen and (                min-resolution: 2dppx) {
-    background-image: image-url("#{$file-2x}");
+    background-image: url("#{$file-2x}");
     background-size: $width-1x $height-1x;
   }
 }
@@ -508,7 +509,7 @@
 // Responsive utilities
 // -------------------------
 // More easily include all the states for responsive-utilities.less.
-// [converter] $parent hack
+// $parent hack because sass doesn't support tr& (without space)
 @mixin responsive-visibility($parent) {
   #{$parent} { display: block !important; }
   tr#{$parent} { display: table-row !important; }
@@ -516,7 +517,6 @@
   td#{$parent} { display: table-cell !important; }
 }
 
-// [converter] $parent hack
 @mixin responsive-invisibility($parent) {
   #{$parent} { display: none !important; }
   tr#{$parent} { display: none !important; }
@@ -712,7 +712,6 @@
 // horizontal sizing, wrap controls in the predefined grid classes. `<select>`
 // element gets special love because it's special, and that's a fact!
 
-// [converter] $parent hack
 @mixin input-size($parent, $input-height, $padding-vertical, $padding-horizontal, $font-size, $line-height, $border-radius) {
   #{$parent} { height: $input-height;
   padding: $padding-vertical $padding-horizontal;
