@@ -370,7 +370,7 @@ body {
   font-size: 18px;
   line-height: 1.42857;
   color: #4b5055;
-  background-color: #191c22;
+  background-color: black;
 }
 
 /* line 34, ../sass/vendor/bootstrap/_scaffolding.scss */
@@ -429,7 +429,7 @@ img {
 .img-thumbnail, .thumbnail {
   padding: 4px;
   line-height: 1.42857;
-  background-color: #191c22;
+  background-color: black;
   border: 1px solid #dddddd;
   border-radius: 3px;
   -webkit-transition: all 0.2s ease-in-out;
@@ -1238,7 +1238,7 @@ pre code {
 @media (min-width: 992px) {
   /* line 196, ../sass/vendor/bootstrap/_grid.scss */
   .container {
-    max-width: 760px;
+    max-width: 940px;
   }
 
   /* line 209, ../sass/vendor/bootstrap/_grid.scss */
@@ -1804,7 +1804,7 @@ th {
 }
 /* line 55, ../sass/vendor/bootstrap/_tables.scss */
 .table .table {
-  background-color: #191c22;
+  background-color: black;
 }
 
 /* line 69, ../sass/vendor/bootstrap/_tables.scss */
@@ -4365,7 +4365,7 @@ input[type="button"].btn-block {
 /* line 93, ../sass/vendor/bootstrap/_navs.scss */
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
   color: #737c7f;
-  background-color: #191c22;
+  background-color: black;
   border: 1px solid #dddddd;
   border-bottom-color: transparent;
   cursor: default;
@@ -4430,7 +4430,7 @@ input[type="button"].btn-block {
 }
 /* line 182, ../sass/vendor/bootstrap/_navs.scss */
 .nav-tabs-justified > .active > a, .nav-tabs.nav-justified > .active > a {
-  border-bottom-color: #191c22;
+  border-bottom-color: black;
 }
 
 /* line 21, ../sass/vendor/bootstrap/_mixins.scss */
@@ -4816,7 +4816,7 @@ input[type="button"].btn-block {
 
 /* line 357, ../sass/vendor/bootstrap/_navbar.scss */
 .navbar-default {
-  background-color: #f8f8f8;
+  background-color: #191c22;
   border-color: #e0e0e0;
 }
 /* line 361, ../sass/vendor/bootstrap/_navbar.scss */
@@ -4866,7 +4866,7 @@ input[type="button"].btn-block {
 /* line 414, ../sass/vendor/bootstrap/_navbar.scss */
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-  border-color: #e6e6e6;
+  border-color: #0a0b0d;
 }
 /* line 422, ../sass/vendor/bootstrap/_navbar.scss */
 .navbar-default .navbar-nav > .dropdown > a:hover .caret,
@@ -7461,23 +7461,33 @@ td.visible-print {
 	My shiz
 */
 /* line 1, ../sass/modules/_general.scss */
+html {
+  height: 100%;
+}
+
+/* line 4, ../sass/modules/_general.scss */
 body {
   -webkit-font-smoothing: antialiased;
+  height: 100%;
 }
 
-/* line 6, ../sass/modules/_general.scss */
-.section-down .icon-chevron-down {
-  color: #a4afb1;
-  font-size: 72px;
+/* line 12, ../sass/modules/_general.scss */
+.section-down a {
+  display: block;
   margin-top: -50px;
 }
+/* line 16, ../sass/modules/_general.scss */
+.section-down .icon-chevron-down {
+  color: #2980b9;
+  font-size: 72px;
+}
 
-/* line 13, ../sass/modules/_general.scss */
+/* line 22, ../sass/modules/_general.scss */
 .icon-home {
   font-size: 20px;
 }
 
-/* line 17, ../sass/modules/_general.scss */
+/* line 26, ../sass/modules/_general.scss */
 .icon-view-thumb {
   display: inline-block;
   font-size: 23px;
@@ -7488,25 +7498,160 @@ body {
   color: #2980b9;
 }
 
-/* line 27, ../sass/modules/_general.scss */
-.work-group {
-  margin: 4em 0 7em;
+/* line 36, ../sass/modules/_general.scss */
+.work {
+  background-color: #191c22;
+  overflow: hidden;
 }
 
-/* line 30, ../sass/modules/_general.scss */
+/* line 41, ../sass/modules/_general.scss */
+.work-group {
+  margin: 10em 0 7em;
+}
+
+/* line 44, ../sass/modules/_general.scss */
+.work-group.casestudy {
+  margin-top: 4.5em;
+  margin-bottom: 0;
+}
+
+/* line 48, ../sass/modules/_general.scss */
 .work-row {
   overflow: hidden;
   margin-bottom: 2em;
 }
 
-/* line 34, ../sass/modules/_general.scss */
+/* line 52, ../sass/modules/_general.scss */
 .work-group-heading {
   margin-bottom: .7em;
+}
+
+/* line 56, ../sass/modules/_general.scss */
+.work-item-container {
+  position: relative;
+  display: block;
+}
+
+/* line 61, ../sass/modules/_general.scss */
+.work-overlay {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  padding: 1em 1em 1em 2em;
+  background: rgba(6, 6, 8, 0.95);
+  transition: all 0.3s ease;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+}
+/* line 74, ../sass/modules/_general.scss */
+.work-overlay:hover {
+  opacity: 1;
+}
+/* line 78, ../sass/modules/_general.scss */
+.work-overlay h3 {
+  position: absolute;
+  bottom: 0.7em;
+}
+
+/* line 84, ../sass/modules/_general.scss */
+.work-casestudy-header {
+  width: 100%;
+  background-size: cover;
+  height: 458px;
+  position: relative;
+  -webkit-box-shadow: inset 0 -90px 90px rgba(0, 0, 0, 0.75);
+  box-shadow: inset 0 -90px 90px rgba(0, 0, 0, 0.75);
+}
+
+/* line 92, ../sass/modules/_general.scss */
+.casestudy-heading-group {
+  position: absolute;
+  bottom: 2em;
+}
+/* line 95, ../sass/modules/_general.scss */
+.casestudy-heading-group h1 {
+  margin-top: 0;
+}
+/* line 98, ../sass/modules/_general.scss */
+.casestudy-heading-group h4 {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* line 103, ../sass/modules/_general.scss */
+.casestudy-section {
+  border-bottom: 1px solid #272a2f;
+  margin: 3em 0 3em;
+  padding-bottom: 5em;
+  overflow: hidden;
+}
+
+/* line 109, ../sass/modules/_general.scss */
+.casestudy-section.section-first {
+  margin-top: 0;
+  padding-top: 4em;
+}
+/* line 113, ../sass/modules/_general.scss */
+.casestudy-section.section-first p {
+  color: #e3edff;
+}
+
+/* line 117, ../sass/modules/_general.scss */
+.casestudy-section.section-supersized {
+  padding-bottom: 0;
+}
+/* line 120, ../sass/modules/_general.scss */
+.casestudy-section.section-supersized .casestudy-section-image {
+  margin-bottom: 0;
+}
+
+/* line 125, ../sass/modules/_general.scss */
+.section-first {
+  padding-bottom: 4em;
+}
+
+/* line 129, ../sass/modules/_general.scss */
+.casestudy-section-image {
+  margin-bottom: 4em;
+}
+
+/* line 133, ../sass/modules/_general.scss */
+.section-description {
+  margin-bottom: 4em;
+}
+
+/* line 136, ../sass/modules/_general.scss */
+.image-caption {
+  border-bottom: 1px solid #272a2f;
+  padding: .3em 0 0;
 }
 
 /* line 1, ../sass/modules/_about.scss */
 .about {
   background-color: #f7f7f7;
+  height: 1010px;
+}
+
+/* line 1, ../sass/modules/_menu.scss */
+.work-menu {
+  overflow: hidden;
+  padding-top: 2em;
+  background-color: #191c22;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 9, ../sass/modules/_menu.scss */
+.work-menu-item {
+  margin-bottom: 2em;
+  padding-bottom: 2em;
+  border-bottom: 1px solid #272a2f;
 }
 
 /* line 1, ../sass/modules/_footer.scss */
@@ -7522,10 +7667,47 @@ footer h4 {
 footer p {
   color: #737c7f;
 }
+/* line 11, ../sass/modules/_footer.scss */
+footer .footer-contactme {
+  margin: 2em 0 0;
+  padding: 1.5em 0 0;
+  border-top: 1px solid #272a2f;
+  overflow: hidden;
+}
+/* line 17, ../sass/modules/_footer.scss */
+footer .footer-contactme i {
+  color: #2980b9;
+  position: relative;
+  top: 2px;
+  padding-right: 5px;
+}
 
-/* line 1, ../sass/modules/_flikgift.scss */
-.flikgift {
-  margin: 0;
+/* line 2, ../sass/modules/_flikgift.scss */
+.flikgift .work-casestudy-header {
+  background: black url(../../img/work/flikgift/bg_header.jpg) no-repeat top center;
+}
+/* line 5, ../sass/modules/_flikgift.scss */
+.flikgift .flikgift-brand {
+  margin-top: -4em;
+}
+/* line 9, ../sass/modules/_flikgift.scss */
+.flikgift .section-ribbon {
+  margin-top: -3em;
+  padding-top: 3em;
+}
+/* line 13, ../sass/modules/_flikgift.scss */
+.flikgift .flikgift-ribbon {
+  margin-top: -3em;
+}
+/* line 16, ../sass/modules/_flikgift.scss */
+.flikgift .section-birthdayclock {
+  padding-top: 5em;
+  border: none;
+  margin-bottom: 0;
+}
+/* line 21, ../sass/modules/_flikgift.scss */
+.flikgift .flikgift-balloons {
+  margin-top: -3em;
 }
 
 @font-face {
@@ -8065,11 +8247,12 @@ h2, .h2 {
 
 /* line 14, ../sass/overrides/_jd-type.scss */
 h3, .h3 {
-  font-size: 30px;
+  font-size: 36px;
   font-weight: 500;
+  letter-spacing: -1px;
 }
 
-/* line 19, ../sass/overrides/_jd-type.scss */
+/* line 20, ../sass/overrides/_jd-type.scss */
 h4, .h4 {
   font-family: "ff-din-web", Verdana, sans-serif;
   font-size: 67%;
@@ -8081,7 +8264,7 @@ h4, .h4 {
   margin-bottom: 1.5em;
 }
 
-/* line 30, ../sass/overrides/_jd-type.scss */
+/* line 31, ../sass/overrides/_jd-type.scss */
 small {
   font-size: 67%;
   text-transform: uppercase;
@@ -8090,15 +8273,20 @@ small {
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 38, ../sass/overrides/_jd-type.scss */
+/* line 39, ../sass/overrides/_jd-type.scss */
 a {
   transition: all 0.2s ease;
 }
 
-/* line 43, ../sass/overrides/_jd-type.scss */
+/* line 44, ../sass/overrides/_jd-type.scss */
 a:hover,
 a:focus {
   text-decoration: none;
+}
+
+/* line 48, ../sass/overrides/_jd-type.scss */
+p {
+  color: #737c7f;
 }
 
 /* line 2, ../sass/overrides/_jd-jumbotron.scss */
@@ -8116,8 +8304,9 @@ a:focus {
 /* line 1, ../sass/overrides/_jd-navbar.scss */
 .navbar {
   border-bottom: 1px solid #272a2f;
+  background-color: rgba(25, 28, 34, 0.96);
 }
-/* line 4, ../sass/overrides/_jd-navbar.scss */
+/* line 5, ../sass/overrides/_jd-navbar.scss */
 .navbar .nav {
   font-size: 67%;
   text-transform: uppercase;
@@ -8125,39 +8314,67 @@ a:focus {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
-/* line 13, ../sass/overrides/_jd-navbar.scss */
+/* line 14, ../sass/overrides/_jd-navbar.scss */
 .navbar .navbar-nav > li > a {
   color: #e3edff;
 }
-/* line 17, ../sass/overrides/_jd-navbar.scss */
+/* line 18, ../sass/overrides/_jd-navbar.scss */
 .navbar .navbar-nav > li > a:hover, .navbar .navbar-nav > li > a:focus {
   color: #2980b9;
   background-color: transparent;
 }
 
-/* line 26, ../sass/overrides/_jd-navbar.scss */
+/* line 27, ../sass/overrides/_jd-navbar.scss */
 .about .navbar {
   border-bottom: 1px solid #e0e0e0;
+  background-color: #f7f7f7;
 }
 
-/* line 31, ../sass/overrides/_jd-navbar.scss */
+/* line 33, ../sass/overrides/_jd-navbar.scss */
 .navbar-brand {
   color: #737c7f;
   font-size: 18px;
   letter-spacing: -1px;
 }
-/* line 35, ../sass/overrides/_jd-navbar.scss */
+/* line 37, ../sass/overrides/_jd-navbar.scss */
 .navbar-brand a {
   color: #737c7f;
 }
 
-/* line 40, ../sass/overrides/_jd-navbar.scss */
-.navbar-brand-twitter {
+/* line 44, ../sass/overrides/_jd-navbar.scss */
+.navbar-brand-twitter,
+.navbar-brand-dribbble,
+.navbar-brand-linkedin {
   display: inline-block;
-  background: url(../../img/twitter.svg) no-repeat top right;
   width: 16px;
   height: 16px;
   padding-left: 20px;
   position: relative;
   top: 2px;
+}
+
+/* line 53, ../sass/overrides/_jd-navbar.scss */
+.navbar-brand-twitter {
+  background: url(../../img/twitter.svg) no-repeat top right;
+}
+
+/* line 58, ../sass/overrides/_jd-navbar.scss */
+.work-menu-item h3 {
+  margin-top: 0;
+}
+/* line 61, ../sass/overrides/_jd-navbar.scss */
+.work-menu-item h4 {
+  margin-bottom: .5em;
+}
+/* line 64, ../sass/overrides/_jd-navbar.scss */
+.work-menu-item .menu-item-description {
+  padding-top: 1.5em;
+}
+/* line 67, ../sass/overrides/_jd-navbar.scss */
+.work-menu-item .menu-item-arrow {
+  padding-top: 1.5em;
+}
+/* line 70, ../sass/overrides/_jd-navbar.scss */
+.work-menu-item .icon-arrow-thin-right {
+  font-size: 2em;
 }

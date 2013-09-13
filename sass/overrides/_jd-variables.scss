@@ -26,7 +26,7 @@ $brand-info:            #5bc0de;
 // Scaffolding
 // -------------------------
 
-$body-bg:               $gray-darker;
+$body-bg:               #000;
 $text-color:            $gray-dark;
 
 // Links
@@ -238,7 +238,7 @@ $grid-float-breakpoint:     $screen-tablet;
 $navbar-height:                    80px;
 $navbar-margin-bottom:             $line-height-computed;
 $navbar-default-color:             #777;
-$navbar-default-bg:                #f8f8f8;
+$navbar-default-bg:                $gray-darker;
 $navbar-default-border:            $gray-lighter;
 $navbar-border-radius:             none;
 $navbar-padding-horizontal:        floor($grid-gutter-width / 2);
@@ -613,7 +613,7 @@ $component-offset-horizontal: 180px;
 $container-tablet:            ((480px + $grid-gutter-width));
 
 // Medium screen / desktop
-$container-desktop:           ((720px + $grid-gutter-width));
+$container-desktop:           ((900px + $grid-gutter-width));
 
 // Large screen / wide desktop
 $container-lg-desktop:        ((980px + $grid-gutter-width));

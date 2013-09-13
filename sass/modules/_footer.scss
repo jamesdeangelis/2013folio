@@ -8,4 +8,17 @@ footer {
 	p {
 		color: $gray;
 	}
+	.footer-contactme {
+		margin: 2em 0 0;
+		padding: 1.5em 0 0;
+		border-top: 1px solid $gray-line;
+		overflow: hidden;
+
+		i {
+			color: $brand-primary;
+			position: relative;
+			top: 2px;
+			padding-right: 5px;
+		}
+	}
 }

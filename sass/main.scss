@@ -1,4 +1,5 @@
 @import "compass";
+@import "compass/css3/border-radius";
 
 @import "overrides/_jd-variables";
 
@@ -63,6 +64,7 @@
 // Modules
 @import "modules/general";
 @import "modules/about";
+@import "modules/menu";
 @import "modules/footer";
 @import "modules/flikgift";
 @import "modules/dripicons";
