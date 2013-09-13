@@ -12,7 +12,7 @@
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="css/main.css">
 
-    <!-- <link rel="stylesheet" type="text/css" href="sass/modules/elementTransitions.css" /> -->
+    <link rel="stylesheet" type="text/css" href="sass/modules/elementTransitions.css" />
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -23,11 +23,66 @@
     <!-- Typekit -->
     <script type="text/javascript" src="//use.typekit.net/pvq6rio.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+    <style>
+      .et-wrapper {
+        width: 100%;
+        height: 3000px;
+      }
+    </style>
     
 
   </head>
 
-  <body class="">
+  <body>
+  
+  <div class="et-wrapper">
+
+    <div class="et-page et-rotate" et-in="scaleUp" et-out="moveToRight ontop">
+       
+      <div class="about">
+       <div class="navbar" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">@JamesDeAngelis <i class="navbar-brand-twitter"></i></a>
+            </div>
+          </div><!-- /.container -->
+
+
+        </div><!-- /.navbar -->
+
+        <div class="container">
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="jumbotron">
+                <h1>James is a digital product designer <a href="#">for hire</a> living in sunny Sydney, Australia. I make lorem ipsum dolar amet, and I make it good lorem ipsum dolar.</h1>
+              </div>
+            </div>
+          </div> 
+
+          <div class="row">
+            <div class="col-md-4">
+              <small class="text-muted">LET’S GET THIS PARTY STARTED. AND STUFF.</small>
+            </div>
+            <div class="col-md-4 pull-right">
+              <div class="section-down">
+                <!-- <a href="#" class="pull-right et-rotate" et-in="rotateCarouselBottomIn" et-out="rotateCarouselBottomOut ontop"><i class="icon icon-chevron-down"></i></a> -->
+                <a href="#" class="pull-right"><i class="icon icon-chevron-down"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div><!--/.container-->
+      </div><!--  end about -->
+    </div>
+
+    <div class="et-page">
   
     <div class="work flikgift">
 
@@ -43,7 +98,7 @@
           </div>
           <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav pull-right">
-              <li><a href="#"><div class="icon icon-home"></div></a></li>
+              <li><a href="#" class="et-rotate" et-in="scaleUp" et-out="moveToRight ontop"><div class="icon icon-home"></div></a></li>
               <li><a href="mailto:jdeangelis83@gmail.com">HIRE ME</a></li>
               <li><a id="open-menu" href="#contact">Project list<i class="icon icon-view-thumb"></i></a></li>
             </ul>
@@ -451,6 +506,8 @@
       </footer>
 
     </div>
+  </div>
+  </div>
 
 
     <!-- Bootstrap core JavaScript
@@ -469,7 +526,7 @@
           effect : "fadeIn"
         });
         $("#open-menu").click(function(){
-          $("body").toggleClass("menu-open menu-closed");
+          $("body").toggleClass("menu-open");
         });
       });
     </script>
