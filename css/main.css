@@ -7510,7 +7510,7 @@ body {
   padding-bottom: 7em;
   position: relative;
   z-index: 300;
-  margin-bottom: 450px;
+  margin-bottom: 500px;
   background-color: #191c22;
   overflow: hidden;
 }
@@ -7518,7 +7518,6 @@ body {
 /* line 50, ../sass/modules/_general.scss */
 .work-group.casestudy {
   margin-top: 4.5em;
-  margin-bottom: 0;
 }
 
 /* line 54, ../sass/modules/_general.scss */
@@ -7644,41 +7643,72 @@ body {
   height: 1010px;
 }
 
-/* line 2, ../sass/modules/_menu.scss */
-.work-menu-item h3 {
-  margin-top: 0;
+/* line 1, ../sass/modules/_menu.scss */
+.menu-open {
+  padding: 0;
+  overflow: hidden;
 }
-/* line 5, ../sass/modules/_menu.scss */
-.work-menu-item h4 {
-  margin-bottom: .5em;
-}
-/* line 8, ../sass/modules/_menu.scss */
-.work-menu-item .menu-item-description {
-  padding-top: 1.5em;
-}
-/* line 11, ../sass/modules/_menu.scss */
-.work-menu-item .menu-item-arrow {
-  padding-top: 1.5em;
-}
-/* line 14, ../sass/modules/_menu.scss */
-.work-menu-item .icon-arrow-thin-right {
-  font-size: 2em;
+
+/* line 6, ../sass/modules/_menu.scss */
+.menu-open .work-menu {
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+  -webkit-transition: transform .5s, opacity 0;
+  -moz-transition: transform .5s, opacity 0;
+  -ms-transition: transform .5s, opacity 0;
+  -o-transition: transform .5s, opacity 0;
+  transition: transform .5s, opacity 0;
 }
 
 /* line 19, ../sass/modules/_menu.scss */
 .work-menu {
-  overflow: hidden;
-  padding-top: 2em;
-  background-color: #191c22;
-  width: 100%;
+  position: fixed;
+  z-index: 800;
+  width: 104%;
   height: 100%;
+  overflow-y: scroll;
+  -webkit-transform: translate(0, -100%);
+  -moz-transform: translate(0, -100%);
+  -ms-transform: translate(0, -100%);
+  -o-transform: translate(0, -100%);
+  transform: translate(0, -100%);
+  -webkit-transition: all .7s ease;
+  -moz-transition: all .7s ease;
+  -ms-transition: all .7s ease;
+  -o-transition: all .7s ease;
+  transition: all .7s ease;
+  padding-top: 6.5em;
+  background-color: #191c22;
 }
 
-/* line 27, ../sass/modules/_menu.scss */
+/* line 39, ../sass/modules/_menu.scss */
 .work-menu-item {
   margin-bottom: 2em;
   padding-bottom: 2em;
   border-bottom: 1px solid #272a2f;
+}
+/* line 43, ../sass/modules/_menu.scss */
+.work-menu-item h3 {
+  margin-top: 0;
+}
+/* line 46, ../sass/modules/_menu.scss */
+.work-menu-item h4 {
+  margin-bottom: .5em;
+}
+/* line 49, ../sass/modules/_menu.scss */
+.work-menu-item .menu-item-description {
+  padding-top: 1em;
+}
+/* line 52, ../sass/modules/_menu.scss */
+.work-menu-item .menu-item-arrow {
+  padding-top: 1.5em;
+}
+/* line 55, ../sass/modules/_menu.scss */
+.work-menu-item .icon-arrow-thin-right {
+  font-size: 2em;
 }
 
 /* line 1, ../sass/modules/_footer.scss */
@@ -7687,7 +7717,7 @@ footer {
   bottom: 0;
   left: 0;
   z-index: 100;
-  height: 450px;
+  height: 500px;
   width: 100%;
   background-color: #13131a;
   padding: 2em 0;
@@ -7702,9 +7732,6 @@ footer p {
 }
 /* line 17, ../sass/modules/_footer.scss */
 footer .footer-contactme {
-  margin: 2em 0 0;
-  padding: 1.5em 0 0;
-  border-top: 1px solid #272a2f;
   overflow: hidden;
 }
 /* line 23, ../sass/modules/_footer.scss */
@@ -7741,6 +7768,15 @@ footer .footer-contactme i {
 /* line 21, ../sass/modules/_flikgift.scss */
 .flikgift .flikgift-balloons {
   margin-top: -3em;
+}
+/* line 24, ../sass/modules/_flikgift.scss */
+.flikgift footer {
+  height: 422px;
+}
+/* line 27, ../sass/modules/_flikgift.scss */
+.flikgift .work-group {
+  padding-bottom: 0;
+  margin-bottom: 422px;
 }
 
 @font-face {
