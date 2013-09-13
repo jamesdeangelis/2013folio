@@ -40,6 +40,12 @@ body {
 
 .work-group {
 	margin: 10em 0 7em;
+	padding-bottom: 7em;
+	position: relative;
+	z-index: 300;
+	margin-bottom:450px;
+	background-color: $gray-darker;
+	overflow: hidden;
 }
 .work-group.casestudy {
 	margin-top: 4.5em;
