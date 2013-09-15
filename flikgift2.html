@@ -36,7 +36,7 @@
             <span class="icon-bar"></span>
           </button>
           <div class="navbar-brand">
-          <a id="about-open">@JamesDeAngelis</a>
+          <a class="about-open">@JamesDeAngelis</a>
           <i class="navbar-brand-twitter"></i>
           </div>
         </div>
@@ -205,27 +205,29 @@
     </div>
     
     <div class="about">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="jumbotron">
-              <h1>James is a digital product designer <a href="#">for hire</a> living in sunny Sydney, Australia. I make lorem ipsum dolar amet, and I make it good lorem ipsum dolar.</h1>
-            </div>
-          </div>
-        </div> 
 
-        <div class="row">
-          <div class="col-md-4">
-            <small class="text-muted">LET’S GET THIS PARTY STARTED. AND STUFF.</small>
-          </div>
-          <div class="col-md-4 pull-right">
-            <div class="section-down">
-              <a href="#" id="about-close" class="pull-right"><i class="icon icon-chevron-down"></i></a>
-            </div>
+      <div class="jumbo-holder">
+        <div class="jumbotron">
+          <div class="container">
+            <h1>James is a digital product designer <a class="for-hire" href="mailto:jdeangelis83@gmail.com">for hire<i class="icon icon-mail"></i></a> living in Sydney, Australia. He posts (too much) on <a href="http://twitter.com/jamesdeangelis" class="twitter">Twitter</a>, sometimes <a href="http://dribbble.com/jamesdeangelis" class="dribbble">Dribbbles</a> and gets <a href="au.linkedin.com/in/jamesdeangelis/" class="linkedin">LinkedIn</a></h1>
           </div>
         </div>
-      </div><!--/.container-->
-    </div><!--/.about-->  
+      </div>
+      
+      <div class="about-footer">
+        <a href="#" class="about-footer-link about-open"></a>
+          <div class="about-footer-inner">
+            <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <h3>See the work<i class="icon icon-arrow-thin-down"></i></h3>
+              </div>
+            </div>
+            </div>
+         </div>
+      </div>
+
+    </div><!--/.about--> 
   
     <div class="work flikgift">
       
@@ -460,7 +462,7 @@
         $("#open-menu").click(function() {
           $("body").toggleClass("menu-open");
         });
-        $("#about-open").click(function() {
+        $(".about-open").click(function() {
           $("body").toggleClass("page-about");
         });
         $("#about-close").click(function() {

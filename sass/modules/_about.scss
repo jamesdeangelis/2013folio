@@ -37,3 +37,46 @@
 		transition: all .7s ease;
 	}
 }
+
+.about-footer {
+	width: 100%;
+	overflow: hidden;
+	position: absolute;
+	bottom: 0;
+	background-color: $brand-primary;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+	
+	&:hover {
+		background-color: lighten($brand-primary,5%);	
+	}
+
+	.about-footer-inner {
+		padding: 2em 0;
+	}
+
+	.about-footer-link {
+		position: absolute;
+		display: block;
+		height: 100%;
+		width: 100%;
+		z-index: 100;
+		cursor: pointer;
+	}
+
+	h3,
+	.icon {
+		color: #fff;
+		margin: 0;
+		padding: 0;
+	}
+	.icon {
+		color: #94c0dc;
+		position: relative;
+		left: .3em;
+		top: .1em;
+	}
+}
