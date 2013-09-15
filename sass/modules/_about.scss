@@ -1,4 +1,40 @@
 .about {
 	background-color: #f7f7f7;
-	height: 1010px;
+	height: 100%;
+	width: 100%;
+	z-index: 2000;
+	position: fixed;
+	left: 0;
+	-webkit-transition: all .7s ease;
+	-moz-transition: all .7s ease;
+	-ms-transition: all .7s ease;
+	-o-transition: all .7s ease;
+	transition: all .7s ease;
+}
+.page-work {
+	overflow-y: scroll;
+	overflow-x: hidden;
+	.about {
+		-webkit-transform: translate3d(0,-105%,0);
+		-moz-transform: translate3d(0,-105%,0);
+		-ms-transform: translate3d(0,-105%,0);
+		-o-transform: translate3d(0,-105%,0);
+		transform: translate3d(0,-105%,0);
+	}
+}
+
+.page-about {
+	overflow: hidden;
+	.about {
+		-webkit-transform: translate3d(0,0,0);
+		-moz-transform: translate3d(0,0,0);
+		-ms-transform: translate3d(0,0,0);
+		-o-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0);
+		-webkit-transition: all .7s ease;
+		-moz-transition: all .7s ease;
+		-ms-transition: all .7s ease;
+		-o-transition: all .7s ease;
+		transition: all .7s ease;
+	}
 }

@@ -7468,38 +7468,36 @@ html {
 /* line 4, ../sass/modules/_general.scss */
 body {
   -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  padding-top: 2em;
   height: 100%;
 }
 
-/* line 20, ../sass/modules/_general.scss */
-.page-about .et-wrapper {
-  width: 100%;
-  height: 100%;
+/* line 12, ../sass/modules/_general.scss */
+.work {
+  position: relative;
+  overflow: hidden;
+  background-color: #191c22;
 }
 
-/* line 25, ../sass/modules/_general.scss */
-.page-work .et-wrapper {
-  width: 100%;
-  height: 2500px;
-}
-
-/* line 32, ../sass/modules/_general.scss */
+/* line 19, ../sass/modules/_general.scss */
 .section-down a {
   display: block;
   margin-top: -50px;
 }
-/* line 36, ../sass/modules/_general.scss */
+/* line 23, ../sass/modules/_general.scss */
 .section-down .icon-chevron-down {
   color: #2980b9;
   font-size: 72px;
 }
 
-/* line 42, ../sass/modules/_general.scss */
+/* line 29, ../sass/modules/_general.scss */
 .icon-home {
   font-size: 20px;
 }
 
-/* line 46, ../sass/modules/_general.scss */
+/* line 33, ../sass/modules/_general.scss */
 .icon-view-thumb {
   display: inline-block;
   font-size: 23px;
@@ -7510,15 +7508,10 @@ body {
   color: #2980b9;
 }
 
-/* line 56, ../sass/modules/_general.scss */
-.work {
-  background-color: #191c22;
-  overflow: hidden;
-}
-
-/* line 61, ../sass/modules/_general.scss */
+/* line 44, ../sass/modules/_general.scss */
 .work-group {
-  margin: 10em 0 7em;
+  margin: 0 0 7em;
+  padding-top: 8em;
   padding-bottom: 7em;
   position: relative;
   z-index: 300;
@@ -7527,29 +7520,29 @@ body {
   overflow: hidden;
 }
 
-/* line 70, ../sass/modules/_general.scss */
+/* line 54, ../sass/modules/_general.scss */
 .work-group.casestudy {
   margin-top: 4.5em;
 }
 
-/* line 74, ../sass/modules/_general.scss */
+/* line 58, ../sass/modules/_general.scss */
 .work-row {
   overflow: hidden;
   margin-bottom: 2em;
 }
 
-/* line 78, ../sass/modules/_general.scss */
+/* line 62, ../sass/modules/_general.scss */
 .work-group-heading {
   margin-bottom: .7em;
 }
 
-/* line 82, ../sass/modules/_general.scss */
+/* line 66, ../sass/modules/_general.scss */
 .work-item-container {
   position: relative;
   display: block;
 }
 
-/* line 87, ../sass/modules/_general.scss */
+/* line 71, ../sass/modules/_general.scss */
 .work-overlay {
   position: absolute;
   z-index: 100;
@@ -7567,17 +7560,17 @@ body {
   -o-border-radius: 2px;
   border-radius: 2px;
 }
-/* line 100, ../sass/modules/_general.scss */
+/* line 84, ../sass/modules/_general.scss */
 .work-overlay:hover {
   opacity: 1;
 }
-/* line 104, ../sass/modules/_general.scss */
+/* line 88, ../sass/modules/_general.scss */
 .work-overlay h3 {
   position: absolute;
   bottom: 0.7em;
 }
 
-/* line 110, ../sass/modules/_general.scss */
+/* line 94, ../sass/modules/_general.scss */
 .work-casestudy-header {
   width: 100%;
   background-size: cover;
@@ -7587,21 +7580,21 @@ body {
   box-shadow: inset 0 -90px 90px rgba(0, 0, 0, 0.75);
 }
 
-/* line 118, ../sass/modules/_general.scss */
+/* line 102, ../sass/modules/_general.scss */
 .casestudy-heading-group {
   position: absolute;
   bottom: 2em;
 }
-/* line 121, ../sass/modules/_general.scss */
+/* line 105, ../sass/modules/_general.scss */
 .casestudy-heading-group h1 {
   margin-top: 0;
 }
-/* line 124, ../sass/modules/_general.scss */
+/* line 108, ../sass/modules/_general.scss */
 .casestudy-heading-group h4 {
   color: rgba(255, 255, 255, 0.5);
 }
 
-/* line 129, ../sass/modules/_general.scss */
+/* line 113, ../sass/modules/_general.scss */
 .casestudy-section {
   border-bottom: 1px solid #272a2f;
   margin: 3em 0 3em;
@@ -7609,41 +7602,41 @@ body {
   overflow: hidden;
 }
 
-/* line 135, ../sass/modules/_general.scss */
+/* line 119, ../sass/modules/_general.scss */
 .casestudy-section.section-first {
   margin-top: 0;
   padding-top: 4em;
 }
-/* line 139, ../sass/modules/_general.scss */
+/* line 123, ../sass/modules/_general.scss */
 .casestudy-section.section-first p {
   color: #e3edff;
 }
 
-/* line 143, ../sass/modules/_general.scss */
+/* line 127, ../sass/modules/_general.scss */
 .casestudy-section.section-supersized {
   padding-bottom: 0;
 }
-/* line 146, ../sass/modules/_general.scss */
+/* line 130, ../sass/modules/_general.scss */
 .casestudy-section.section-supersized .casestudy-section-image {
   margin-bottom: 0;
 }
 
-/* line 151, ../sass/modules/_general.scss */
+/* line 135, ../sass/modules/_general.scss */
 .section-first {
   padding-bottom: 4em;
 }
 
-/* line 155, ../sass/modules/_general.scss */
+/* line 139, ../sass/modules/_general.scss */
 .casestudy-section-image {
   margin-bottom: 4em;
 }
 
-/* line 159, ../sass/modules/_general.scss */
+/* line 143, ../sass/modules/_general.scss */
 .section-description {
   margin-bottom: 4em;
 }
 
-/* line 162, ../sass/modules/_general.scss */
+/* line 146, ../sass/modules/_general.scss */
 .image-caption {
   border-bottom: 1px solid #272a2f;
   padding: .3em 0 0;
@@ -7652,75 +7645,126 @@ body {
 /* line 1, ../sass/modules/_about.scss */
 .about {
   background-color: #f7f7f7;
-  height: 1010px;
-}
-
-/* line 1, ../sass/modules/_menu.scss */
-.menu-open {
-  padding: 0;
-  overflow: hidden;
-}
-
-/* line 6, ../sass/modules/_menu.scss */
-.menu-open .work-menu {
-  -webkit-transform: translate(0, 0);
-  -moz-transform: translate(0, 0);
-  -ms-transform: translate(0, 0);
-  -o-transform: translate(0, 0);
-  transform: translate(0, 0);
-  -webkit-transition: transform .5s, opacity 0;
-  -moz-transition: transform .5s, opacity 0;
-  -ms-transition: transform .5s, opacity 0;
-  -o-transition: transform .5s, opacity 0;
-  transition: transform .5s, opacity 0;
-}
-
-/* line 19, ../sass/modules/_menu.scss */
-.work-menu {
+  height: 100%;
+  width: 100%;
+  z-index: 2000;
   position: fixed;
-  z-index: 800;
-  width: 104%;
-  height: auto;
-  overflow-y: scroll;
-  -webkit-transform: translate(0, -100%);
-  -moz-transform: translate(0, -100%);
-  -ms-transform: translate(0, -100%);
-  -o-transform: translate(0, -100%);
-  transform: translate(0, -100%);
+  left: 0;
   -webkit-transition: all .7s ease;
   -moz-transition: all .7s ease;
   -ms-transition: all .7s ease;
   -o-transition: all .7s ease;
   transition: all .7s ease;
-  padding-top: 6.5em;
+}
+
+/* line 14, ../sass/modules/_about.scss */
+.page-work {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+/* line 17, ../sass/modules/_about.scss */
+.page-work .about {
+  -webkit-transform: translate3d(0, -105%, 0);
+  -moz-transform: translate3d(0, -105%, 0);
+  -ms-transform: translate3d(0, -105%, 0);
+  -o-transform: translate3d(0, -105%, 0);
+  transform: translate3d(0, -105%, 0);
+}
+
+/* line 26, ../sass/modules/_about.scss */
+.page-about {
+  overflow: hidden;
+}
+/* line 28, ../sass/modules/_about.scss */
+.page-about .about {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: all .7s ease;
+  -moz-transition: all .7s ease;
+  -ms-transition: all .7s ease;
+  -o-transition: all .7s ease;
+  transition: all .7s ease;
+}
+
+/* line 1, ../sass/modules/_menu.scss */
+.menu-open {
+  overflow: hidden;
+}
+
+/* line 5, ../sass/modules/_menu.scss */
+.menu-open .work-menu {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 13, ../sass/modules/_menu.scss */
+.work-menu {
+  position: fixed;
+  z-index: 1000;
+  width: 104%;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  -webkit-transform: translate3d(0, -105%, 0);
+  -moz-transform: translate3d(0, -105%, 0);
+  -ms-transform: translate3d(0, -105%, 0);
+  -o-transform: translate3d(0, -105%, 0);
+  transform: translate3d(0, -105%, 0);
+  -webkit-transition: all .7s ease;
+  -moz-transition: all .7s ease;
+  -ms-transition: all .7s ease;
+  -o-transition: all .7s ease;
+  transition: all .7s ease;
+  padding-top: 2.5em;
   background-color: rgba(25, 28, 34, 0.97);
 }
 
-/* line 40, ../sass/modules/_menu.scss */
+/* line 37, ../sass/modules/_menu.scss */
 .work-menu-item {
-  margin-bottom: 2em;
-  padding-bottom: 2em;
+  margin-left: -3.2em;
+  padding: 2em 0;
   border-bottom: 1px solid #272a2f;
+  transition: all .3s ease;
+  position: relative;
 }
 /* line 44, ../sass/modules/_menu.scss */
+.work-menu-item .menu-item-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  cursor: pointer;
+  z-index: 2000;
+}
+/* line 52, ../sass/modules/_menu.scss */
 .work-menu-item h3 {
   margin-top: 0;
 }
-/* line 47, ../sass/modules/_menu.scss */
+/* line 55, ../sass/modules/_menu.scss */
 .work-menu-item h4 {
   margin-bottom: .5em;
 }
-/* line 50, ../sass/modules/_menu.scss */
+/* line 58, ../sass/modules/_menu.scss */
 .work-menu-item .menu-item-description {
-  padding-top: 1em;
+  padding-top: 1.8em;
 }
-/* line 53, ../sass/modules/_menu.scss */
+/* line 61, ../sass/modules/_menu.scss */
 .work-menu-item .menu-item-arrow {
   padding-top: 1.5em;
 }
-/* line 56, ../sass/modules/_menu.scss */
+/* line 64, ../sass/modules/_menu.scss */
 .work-menu-item .icon-arrow-thin-right {
   font-size: 2em;
+}
+/* line 67, ../sass/modules/_menu.scss */
+.work-menu-item:hover {
+  background-color: rgba(31, 35, 43, 0.95);
 }
 
 /* line 1, ../sass/modules/_footer.scss */
@@ -7728,7 +7772,7 @@ footer {
   position: fixed;
   bottom: 0;
   left: 0;
-  z-index: 100;
+  z-index: 1;
   height: 500px;
   width: 100%;
   background-color: #13131a;
@@ -8385,10 +8429,16 @@ p {
 
 /* line 1, ../sass/overrides/_jd-navbar.scss */
 .navbar {
+  z-index: 5000;
   border-bottom: 1px solid #272a2f;
   background-color: rgba(25, 28, 34, 0.96);
+  -webkit-transition: all .6s ease;
+  -moz-transition: all .6s ease;
+  -ms-transition: all .6s ease;
+  -o-transition: all .6s ease;
+  transition: all .6s ease;
 }
-/* line 5, ../sass/overrides/_jd-navbar.scss */
+/* line 11, ../sass/overrides/_jd-navbar.scss */
 .navbar .nav {
   font-size: 67%;
   text-transform: uppercase;
@@ -8396,20 +8446,15 @@ p {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
-/* line 14, ../sass/overrides/_jd-navbar.scss */
+/* line 20, ../sass/overrides/_jd-navbar.scss */
 .navbar .navbar-nav > li > a {
   color: #e3edff;
+  opacity: 1;
 }
-/* line 18, ../sass/overrides/_jd-navbar.scss */
+/* line 25, ../sass/overrides/_jd-navbar.scss */
 .navbar .navbar-nav > li > a:hover, .navbar .navbar-nav > li > a:focus {
   color: #2980b9;
   background-color: transparent;
-}
-
-/* line 27, ../sass/overrides/_jd-navbar.scss */
-.about .navbar {
-  border-bottom: 1px solid #e0e0e0;
-  background-color: #f7f7f7;
 }
 
 /* line 33, ../sass/overrides/_jd-navbar.scss */
@@ -8438,4 +8483,14 @@ p {
 /* line 53, ../sass/overrides/_jd-navbar.scss */
 .navbar-brand-twitter {
   background: url(../../img/twitter.svg) no-repeat top right;
+}
+
+/* line 58, ../sass/overrides/_jd-navbar.scss */
+.page-about .navbar {
+  border-bottom: 1px solid #e0e0e0;
+  background-color: #f7f7f7;
+}
+/* line 63, ../sass/overrides/_jd-navbar.scss */
+.page-about .navbar-nav > li > a {
+  color: #e0e0e0;
 }
