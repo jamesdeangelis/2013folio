@@ -2,11 +2,11 @@
 	z-index: 5000;
 	border-bottom: 1px solid $gray-line;
 	background-color: rgba(25,28,34,.96);
-	-webkit-transition: all .6s ease;
-	-moz-transition: all .6s ease;
-	-ms-transition: all .6s ease;
-	-o-transition: all .6s ease;
-	transition: all .6s ease;
+	-webkit-transition: all .8s ease;
+	-moz-transition: all .8s ease;
+	-ms-transition: all .8s ease;
+	-o-transition: all .8s ease;
+	transition: all .8s ease;
 	
 	.nav {
 		font-size: 67%;
@@ -36,6 +36,11 @@
 	letter-spacing: -1px;
 	a {
 		color: $gray;
+
+		&:hover {
+			color: $brand-primary !important;
+			cursor: pointer;
+		}
 	}
 }
 
@@ -46,12 +51,36 @@
 	width: 16px;
 	height: 16px;
 	padding-left: 20px;
+	margin-left: 5px;
 	position: relative;
-	top: 2px;
+	top: 3px;
+	background-image: url(../../img/social.svg);
+	background-repeat: no-repeat;
+	-webkit-transition: all .4s ease;
+	-moz-transition: all .4s ease;
+	-ms-transition: all .4s ease;
+	-o-transition: all .4s ease;
+	transition: all .4s ease;
 }
 
 .navbar-brand-twitter {
-	background: url(../../img/twitter.svg) no-repeat top right;
+	background-position: 0 0; 
+}
+.navbar-brand-dribbble {
+	background-position: 0 -30px;
+	top: 2px;
+}
+.navbar-brand-linkedin {
+	background-position: 0 -62px;
+}
+
+.icon-view-thumb {
+	display: inline-block;
+	font-size: 23px;
+	margin-top: -5px;
+	position: relative;
+	top: 6px;
+	color: $brand-primary;
 }
 
 .page-about {
@@ -62,6 +91,7 @@
 	.navbar-nav {
 	    > li > a {
 	      color: $gray-lighter;
+	      opacity: 0;
 	  }
 	}
 }

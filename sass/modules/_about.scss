@@ -1,10 +1,9 @@
 .about {
+	position: fixed;
 	background-color: #f7f7f7;
 	height: 100%;
 	width: 100%;
 	z-index: 2000;
-	position: fixed;
-	left: 0;
 	-webkit-transition: all .7s ease;
 	-moz-transition: all .7s ease;
 	-ms-transition: all .7s ease;
@@ -15,11 +14,11 @@
 	overflow-y: scroll;
 	overflow-x: hidden;
 	.about {
-		-webkit-transform: translate3d(0,-105%,0);
-		-moz-transform: translate3d(0,-105%,0);
-		-ms-transform: translate3d(0,-105%,0);
-		-o-transform: translate3d(0,-105%,0);
-		transform: translate3d(0,-105%,0);
+		-webkit-transform: translate3d(0,-100%,0);
+		-moz-transform: translate3d(0,-100%,0);
+		-ms-transform: translate3d(0,-100%,0);
+		-o-transform: translate3d(0,-100%,0);
+		transform: translate3d(0,-100%,0);
 	}
 }
 
