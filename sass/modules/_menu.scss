@@ -1,0 +1,76 @@
+.menu-open {
+	overflow: hidden;
+
+	.icon-view-thumb:before {
+		content: "\e025";
+	}
+}
+
+#open-menu {
+	cursor: pointer;
+}
+
+.menu-open .work-menu {
+	-webkit-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	-ms-transform: translate3d(0,0,0);
+	-o-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+.work-menu {
+	position: fixed;
+	z-index: 1000;
+	width: 104%;
+	height: 100%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	-webkit-transform: translate3d(0,-105%,0);
+	-moz-transform: translate3d(0,-105%,0);
+	-ms-transform: translate3d(0,-105%,0);
+	-o-transform: translate3d(0,-105%,0);
+	transform: translate3d(0,-105%,0);
+	-webkit-transition: all .7s ease;
+	-moz-transition: all .7s ease;
+	-ms-transition: all .7s ease;
+	-o-transition: all .7s ease;
+	transition: all .7s ease;
+	padding-top: 4.5em;
+	background-color: rgba(25,28,34,.98);
+
+}
+
+.work-menu-item {
+	margin-left: -3.2em;
+	padding: 1.5em 0;
+	border-bottom: 1px solid $gray-line;
+	transition: all .3s ease;
+	position: relative;
+
+	h3 {
+		margin-top: 0;
+	}
+	h4 {
+		margin-bottom: .5em;
+	}
+	.menu-item-description {
+		// padding-top: 1.8em;
+	}
+	.menu-item-arrow {
+		padding-top: 1.5em;
+		i {
+			margin-left: -0.8em;
+		}
+	}
+	.icon-arrow-thin-right {
+		font-size: 2em;
+	}
+	&:hover {
+		background-color: lighten($gray-menu, 3%);
+		cursor: pointer;
+	}
+	img {
+		float: left;
+		margin-right: 1.5em;
+	}
+}

@@ -1,0 +1,84 @@
+html {
+	height: 100%;
+}
+body {
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	height: 100%;
+}
+
+.work {
+	position: relative;
+	overflow: hidden;
+	background-color: $gray-darker;
+}
+
+.section-down {
+	a {
+		display: block;
+		margin-top: -50px;
+	}
+	.icon-chevron-down {
+		color: $brand-primary;
+		font-size: 72px;
+	}
+}
+
+.icon-home {
+	font-size: 20px;
+}
+
+
+.work-group {
+	margin: 0 0 7em;
+	padding-top: 8em;
+	padding-bottom: 7em;
+	position: relative;
+	z-index: 300;
+	margin-bottom: 450px;
+	background-color: $gray-darker;
+	overflow: hidden;
+}
+.work-group.casestudy {
+	margin-top: 4.5em;
+}
+.work-row {
+	overflow: hidden;
+	margin-bottom: 2em;
+}
+.work-group-heading {
+	margin-bottom: .7em;
+}
+
+.work-item-container {
+	position: relative;
+	display: block;
+}
+
+.work-overlay {
+	position: absolute;
+	z-index: 100;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	opacity: 0;
+	padding: 1em 1em 1em 2em;
+	background: rgba(6,6,8,.95);
+	transition: all 0.3s ease;
+	@include border-radius(2px);
+
+	&:hover {
+		opacity: 1;
+	}
+	h3 {
+		position: absolute;
+		bottom: 0.7em;
+	}
+	i {
+		font-size: 2em;
+	}
+}
+
+

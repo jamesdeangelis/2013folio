@@ -1,0 +1,33 @@
+.flikgift {
+	.work-casestudy-header {
+		background: #000 url(../../img/work/flikgift/bg_header.jpg) no-repeat top center;
+		background-size: cover;
+		@include box-shadow(inset 0 -90px 90px rgba(0,0,0,.75));
+	}
+	.flikgift-brand {
+		margin-top: -4em;
+	}
+	
+	.section-ribbon {
+		margin-top: -3em;
+		padding-top: 3em;
+	}
+	.flikgift-ribbon {
+		margin-top: -3em;
+	}
+	.section-birthdayclock {
+		padding-top: 5em;
+		border: none;
+		margin-bottom: 0;
+	}
+	.casestudy-section.section-supersized {
+		padding-bottom: 0;
+		
+		.section-description {
+			margin-bottom: 1em;
+		}
+		.casestudy-section-image {
+			margin-bottom: 0;
+		}
+	}
+}
