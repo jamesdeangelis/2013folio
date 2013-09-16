@@ -2,6 +2,7 @@
 	.work-casestudy-header {
 		background: #000 url(../../img/work/flikgift/bg_header.jpg) no-repeat top center;
 		background-size: cover;
+		@include box-shadow(inset 0 -90px 90px rgba(0,0,0,.75));
 	}
 	.flikgift-brand {
 		margin-top: -4em;
@@ -19,9 +20,6 @@
 		border: none;
 		margin-bottom: 0;
 	}
-	// .flikgift-balloons {
-	// 	margin-top: -3em;
-	// }
 	.casestudy-section.section-supersized {
 		padding-bottom: 0;
 		
@@ -31,10 +29,5 @@
 		.casestudy-section-image {
 			margin-bottom: 0;
 		}
-	}
-	.work-group {
-		padding-top: 0;
-		padding-bottom: 0;
-		margin-bottom: 328px;
 	}
 }

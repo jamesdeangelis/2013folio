@@ -7562,69 +7562,6 @@ body {
   font-size: 2em;
 }
 
-/* line 84, ../sass/modules/_general.scss */
-.work-casestudy-header {
-  width: 100%;
-  background-size: cover;
-  height: 458px;
-  position: relative;
-  -webkit-box-shadow: inset 0 -90px 90px rgba(0, 0, 0, 0.75);
-  box-shadow: inset 0 -90px 90px rgba(0, 0, 0, 0.75);
-}
-
-/* line 92, ../sass/modules/_general.scss */
-.casestudy-heading-group {
-  position: absolute;
-  bottom: 2em;
-}
-/* line 95, ../sass/modules/_general.scss */
-.casestudy-heading-group h1 {
-  margin-top: 0;
-}
-/* line 98, ../sass/modules/_general.scss */
-.casestudy-heading-group h4 {
-  color: rgba(255, 255, 255, 0.5);
-}
-
-/* line 103, ../sass/modules/_general.scss */
-.casestudy-section {
-  border-bottom: 1px solid #272a2f;
-  margin: 3em 0 3em;
-  padding-bottom: 5em;
-  overflow: hidden;
-}
-
-/* line 109, ../sass/modules/_general.scss */
-.casestudy-section.section-first {
-  margin-top: 0;
-  padding-top: 4em;
-}
-/* line 113, ../sass/modules/_general.scss */
-.casestudy-section.section-first p {
-  color: #e3edff;
-}
-
-/* line 118, ../sass/modules/_general.scss */
-.section-first {
-  padding-bottom: 4em;
-}
-
-/* line 122, ../sass/modules/_general.scss */
-.casestudy-section-image {
-  margin-bottom: 4em;
-}
-
-/* line 126, ../sass/modules/_general.scss */
-.section-description {
-  margin-bottom: 4em;
-}
-
-/* line 129, ../sass/modules/_general.scss */
-.image-caption {
-  border-bottom: 1px solid #272a2f;
-  padding: .3em 0 0;
-}
-
 /* line 1, ../sass/modules/_about.scss */
 .about {
   position: fixed;
@@ -7800,6 +7737,85 @@ body {
   margin-right: 1.5em;
 }
 
+/* line 1, ../sass/modules/_casestudy.scss */
+.work-casestudy-header {
+  width: 100%;
+  background-size: cover;
+  height: 458px;
+  position: relative;
+}
+
+/* line 8, ../sass/modules/_casestudy.scss */
+.casestudy-heading-group {
+  position: absolute;
+  bottom: 2em;
+}
+/* line 11, ../sass/modules/_casestudy.scss */
+.casestudy-heading-group h1 {
+  margin-top: 0;
+}
+/* line 14, ../sass/modules/_casestudy.scss */
+.casestudy-heading-group h4 {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* line 19, ../sass/modules/_casestudy.scss */
+.casestudy-section {
+  border-bottom: 1px solid #272a2f;
+  margin: 3em 0 3em;
+  padding-bottom: 5em;
+  overflow: hidden;
+}
+
+/* line 25, ../sass/modules/_casestudy.scss */
+.casestudy-section.section-first {
+  margin-top: 0;
+  padding-top: 4em;
+}
+/* line 29, ../sass/modules/_casestudy.scss */
+.casestudy-section.section-first p {
+  color: #e3edff;
+}
+
+/* line 34, ../sass/modules/_casestudy.scss */
+.section-first {
+  padding-bottom: 4em;
+}
+
+/* line 38, ../sass/modules/_casestudy.scss */
+.casestudy-section-image {
+  margin-bottom: 4em;
+}
+
+/* line 42, ../sass/modules/_casestudy.scss */
+.section-description {
+  margin-bottom: 4em;
+}
+
+/* line 45, ../sass/modules/_casestudy.scss */
+.image-caption {
+  border-bottom: 1px solid #272a2f;
+  padding: .3em 0 0;
+}
+
+/* line 56, ../sass/modules/_casestudy.scss */
+.flikgift .work-group,
+.lawpath .work-group,
+.dayrise .work-group,
+.pollenizer .work-group,
+.pygg .work-group,
+.misc .work-group {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 328px;
+}
+
+/* line 62, ../sass/modules/_casestudy.scss */
+.casestudy-section-last {
+  margin-bottom: 0;
+  border: none;
+}
+
 /* line 1, ../sass/modules/_footer.scss */
 footer {
   position: fixed;
@@ -7849,49 +7865,6 @@ footer .icon-mail {
   position: relative;
   z-index: 100;
   margin-bottom: 0;
-}
-
-/* line 2, ../sass/modules/_flikgift.scss */
-.flikgift .work-casestudy-header {
-  background: black url(../../img/work/flikgift/bg_header.jpg) no-repeat top center;
-  background-size: cover;
-}
-/* line 6, ../sass/modules/_flikgift.scss */
-.flikgift .flikgift-brand {
-  margin-top: -4em;
-}
-/* line 10, ../sass/modules/_flikgift.scss */
-.flikgift .section-ribbon {
-  margin-top: -3em;
-  padding-top: 3em;
-}
-/* line 14, ../sass/modules/_flikgift.scss */
-.flikgift .flikgift-ribbon {
-  margin-top: -3em;
-}
-/* line 17, ../sass/modules/_flikgift.scss */
-.flikgift .section-birthdayclock {
-  padding-top: 5em;
-  border: none;
-  margin-bottom: 0;
-}
-/* line 25, ../sass/modules/_flikgift.scss */
-.flikgift .casestudy-section.section-supersized {
-  padding-bottom: 0;
-}
-/* line 28, ../sass/modules/_flikgift.scss */
-.flikgift .casestudy-section.section-supersized .section-description {
-  margin-bottom: 1em;
-}
-/* line 31, ../sass/modules/_flikgift.scss */
-.flikgift .casestudy-section.section-supersized .casestudy-section-image {
-  margin-bottom: 0;
-}
-/* line 35, ../sass/modules/_flikgift.scss */
-.flikgift .work-group {
-  padding-top: 0;
-  padding-bottom: 0;
-  margin-bottom: 328px;
 }
 
 @font-face {
@@ -8407,6 +8380,87 @@ footer .icon-mail {
 /* line 423, ../sass/modules/_dripicons.scss */
 .icon-window:before {
   content: "\e094";
+}
+
+/* line 2, ../sass/modules/_flikgift.scss */
+.flikgift .work-casestudy-header {
+  background: black url(../../img/work/flikgift/bg_header.jpg) no-repeat top center;
+  background-size: cover;
+  -webkit-box-shadow: inset 0 -90px 90px rgba(0, 0, 0, 0.75);
+  box-shadow: inset 0 -90px 90px rgba(0, 0, 0, 0.75);
+}
+/* line 7, ../sass/modules/_flikgift.scss */
+.flikgift .flikgift-brand {
+  margin-top: -4em;
+}
+/* line 11, ../sass/modules/_flikgift.scss */
+.flikgift .section-ribbon {
+  margin-top: -3em;
+  padding-top: 3em;
+}
+/* line 15, ../sass/modules/_flikgift.scss */
+.flikgift .flikgift-ribbon {
+  margin-top: -3em;
+}
+/* line 18, ../sass/modules/_flikgift.scss */
+.flikgift .section-birthdayclock {
+  padding-top: 5em;
+  border: none;
+  margin-bottom: 0;
+}
+/* line 23, ../sass/modules/_flikgift.scss */
+.flikgift .casestudy-section.section-supersized {
+  padding-bottom: 0;
+}
+/* line 26, ../sass/modules/_flikgift.scss */
+.flikgift .casestudy-section.section-supersized .section-description {
+  margin-bottom: 1em;
+}
+/* line 29, ../sass/modules/_flikgift.scss */
+.flikgift .casestudy-section.section-supersized .casestudy-section-image {
+  margin-bottom: 0;
+}
+
+/* line 2, ../sass/modules/_lawpath.scss */
+.lawpath .work-casestudy-header {
+  background: black url(../../img/work/lawpath/bg_header.jpg) no-repeat top center;
+  background-size: cover;
+}
+
+/* line 2, ../sass/modules/_dayrise.scss */
+.dayrise .work-casestudy-header {
+  background: black url(../../img/work/dayrise/bg_header.jpg) no-repeat top center;
+  background-size: cover;
+}
+/* line 7, ../sass/modules/_dayrise.scss */
+.dayrise .casestudy-heading-group h1 {
+  color: #183355;
+}
+/* line 10, ../sass/modules/_dayrise.scss */
+.dayrise .casestudy-heading-group h4 {
+  color: #737c7f;
+}
+/* line 15, ../sass/modules/_dayrise.scss */
+.dayrise .clipboard img {
+  margin-top: 11em;
+}
+
+/* line 2, ../sass/modules/_pollenizer.scss */
+.pollenizer .work-casestudy-header {
+  background: black url(../../img/work/pollenizer/bg_header.jpg) no-repeat top center;
+  background-size: cover;
+}
+
+/* line 2, ../sass/modules/_pygg.scss */
+.pygg .work-casestudy-header {
+  background: black url(../../img/work/pygg/bg_header.jpg) no-repeat top center;
+  background-size: cover;
+}
+
+/* line 2, ../sass/modules/_misc.scss */
+.misc .work-casestudy-header {
+  background: black url(../../img/work/misc/bg_header.png) no-repeat top center;
+  background-size: cover;
 }
 
 /* line 3, ../sass/overrides/_jd-scaffolding.scss */

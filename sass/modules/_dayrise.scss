@@ -1,0 +1,19 @@
+.dayrise {
+	.work-casestudy-header {
+		background: #000 url(../../img/work/dayrise/bg_header.jpg) no-repeat top center;
+		background-size: cover;
+	}
+	.casestudy-heading-group {
+		h1 {
+			color: $dark-blue;
+		}
+		h4 {
+			color: $gray;
+		}
+	}
+	.clipboard {
+		img {
+			margin-top: 11em;
+		}
+	}
+}
