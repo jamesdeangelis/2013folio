@@ -37,13 +37,13 @@
           </button>
           <div class="navbar-brand">
           <a class="about-open">@JamesDeAngelis</a>
-          <i class="navbar-brand-twitter"></i>
+          <i id="social-switch" class="navbar-brand-twitter"></i>
           </div>
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav pull-right">
             <li><a href="mailto:jdeangelis83@gmail.com">HIRE ME</a></li>
-            <li><a id="open-menu" href="#contact"><i class="icon icon-view-thumb"></i></a></li>
+            <li><a id="open-menu"><i class="icon icon-view-thumb"></i></a></li>
           </ul>
         </div><!-- /.nav-collapse -->
       </div><!-- /.container -->
@@ -463,16 +463,16 @@
           $("body").toggleClass("menu-open");
         });
         $(".about-open").click(function() {
-          $("body").toggleClass("page-about");
-        });
-        $("#about-close").click(function() {
-          $("body").toggleClass("page-about");
+            $("body").toggleClass("page-work page-about");
         });
         $("img.lazy").lazyload({ 
           effect : "fadeIn"
         });
         setInterval(function(){
-           $('.navbar-brand-twitter').toggleClass('navbar-brand-dribbble');
+          var classes = ['navbar-brand-twitter','navbar-brand-dribbble','navbar-brand-linkedin'];
+          $("#social-switch").each(function(){
+              this.className = classes[($.inArray(this.className, classes)+1)%classes.length];
+            });
         },5000);
       });
     </script>

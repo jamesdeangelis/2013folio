@@ -25,7 +25,7 @@
 
   </head>
 
-  <body class="page-work">
+  <body class="page-about">
 
      <div class="navbar navbar-fixed-top" role="navigation">
       <div class="container">
@@ -37,7 +37,7 @@
           </button>
           <div class="navbar-brand">
           <a href="#" class="about-open">@JamesDeAngelis</a>
-          <i class="navbar-brand-twitter"></i>
+          <i id="social-switch" class="navbar-brand-twitter"></i>
           </div>
         </div>
         <div class="collapse navbar-collapse">
@@ -58,7 +58,7 @@
           <div class="row">
 
             <div class="col-md-2">
-              <a href="#"><img src="img/work/flikgift/preview.jpg" class="img-responsive img-rounded" alt=""></a>
+              <img src="img/work/flikgift/preview.jpg" class="img-responsive img-rounded" alt="">
             </div>
 
             <div class="menu-item-description">
@@ -370,16 +370,16 @@
           $("body").toggleClass("menu-open");
         });
         $(".about-open").click(function() {
-          $("body").toggleClass("page-about");
-        });
-        $("#about-close").click(function() {
-          $("body").toggleClass("page-about");
+            $("body").toggleClass("page-work page-about");
         });
         $("img.lazy").lazyload({ 
           effect : "fadeIn"
         });
         setInterval(function(){
-           $('.navbar-brand-twitter').toggleClass('navbar-brand-dribbble');
+          var classes = ['navbar-brand-twitter','navbar-brand-dribbble','navbar-brand-linkedin'];
+          $("#social-switch").each(function(){
+              this.className = classes[($.inArray(this.className, classes)+1)%classes.length];
+            });
         },5000);
       });
     </script>
