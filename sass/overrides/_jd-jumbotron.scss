@@ -48,19 +48,19 @@
 }
 
 .twitter:after {
-	background-image: url(../../img/twitter.svg);
+	background-image: url(../img/twitter.svg);
 	left: 0.15em;
 	top: 0.05em;
 }
 
 .dribbble:after {
-	background-image: url(../../img/dribbble.svg);
+	background-image: url(../img/dribbble.svg);
 	left: 0.15em;
 	top: 0.05em;
 	padding-right: .8em;
 }
 .linkedin:after {
-	background-image: url(../../img/linkedin.svg);
+	background-image: url(../img/linkedin.svg);
 	left: 0.15em;
 	top: 0.05em;
 }
@@ -73,11 +73,4 @@
 	padding-right: .1em;
 	color: $brand-primary;
 }
-
-// .for-hire:after {
-// 	background-image: url(../../img/twitter.svg);
-// 	left: 0.15em;
-// 	top: 0.05em;
-// }
-
 
