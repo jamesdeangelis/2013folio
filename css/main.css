@@ -8634,34 +8634,48 @@ p {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
-/* line 20, ../sass/overrides/_jd-navbar.scss */
-.navbar .navbar-nav > li > a {
-  color: #e3edff;
+/* line 18, ../sass/overrides/_jd-navbar.scss */
+.navbar .nav .icon-mail {
+  font-size: 22px;
+  top: 0.13em;
+}
+/* line 24, ../sass/overrides/_jd-navbar.scss */
+.navbar .navbar-nav li {
   opacity: 1;
 }
-/* line 25, ../sass/overrides/_jd-navbar.scss */
+/* line 27, ../sass/overrides/_jd-navbar.scss */
+.navbar .navbar-nav > li > a {
+  color: #e3edff;
+}
+/* line 31, ../sass/overrides/_jd-navbar.scss */
 .navbar .navbar-nav > li > a:hover, .navbar .navbar-nav > li > a:focus {
   color: #2980b9;
   background-color: transparent;
 }
+/* line 37, ../sass/overrides/_jd-navbar.scss */
+.navbar .nav-pipe {
+  height: 26px;
+  margin-top: 28px;
+  border-right: 1px solid #272a2f;
+}
 
-/* line 33, ../sass/overrides/_jd-navbar.scss */
+/* line 44, ../sass/overrides/_jd-navbar.scss */
 .navbar-brand {
   color: #737c7f;
   font-size: 18px;
   letter-spacing: -1px;
 }
-/* line 37, ../sass/overrides/_jd-navbar.scss */
+/* line 48, ../sass/overrides/_jd-navbar.scss */
 .navbar-brand a {
   color: #737c7f;
 }
-/* line 40, ../sass/overrides/_jd-navbar.scss */
+/* line 51, ../sass/overrides/_jd-navbar.scss */
 .navbar-brand a:hover {
   color: #2980b9 !important;
   cursor: pointer;
 }
 
-/* line 49, ../sass/overrides/_jd-navbar.scss */
+/* line 60, ../sass/overrides/_jd-navbar.scss */
 .navbar-brand-twitter,
 .navbar-brand-dribbble,
 .navbar-brand-linkedin {
@@ -8681,23 +8695,23 @@ p {
   transition: all .4s ease;
 }
 
-/* line 66, ../sass/overrides/_jd-navbar.scss */
+/* line 77, ../sass/overrides/_jd-navbar.scss */
 .navbar-brand-twitter {
   background-position: 0 0;
 }
 
-/* line 69, ../sass/overrides/_jd-navbar.scss */
+/* line 80, ../sass/overrides/_jd-navbar.scss */
 .navbar-brand-dribbble {
   background-position: 0 -30px;
   top: 2px;
 }
 
-/* line 73, ../sass/overrides/_jd-navbar.scss */
+/* line 84, ../sass/overrides/_jd-navbar.scss */
 .navbar-brand-linkedin {
   background-position: 0 -62px;
 }
 
-/* line 77, ../sass/overrides/_jd-navbar.scss */
+/* line 88, ../sass/overrides/_jd-navbar.scss */
 .icon-view-thumb {
   display: inline-block;
   font-size: 23px;
@@ -8707,13 +8721,16 @@ p {
   color: #2980b9;
 }
 
-/* line 87, ../sass/overrides/_jd-navbar.scss */
+/* line 98, ../sass/overrides/_jd-navbar.scss */
 .page-about .navbar {
   border-bottom: 1px solid #e0e0e0;
   background-color: #f7f7f7;
 }
-/* line 92, ../sass/overrides/_jd-navbar.scss */
+/* line 103, ../sass/overrides/_jd-navbar.scss */
+.page-about .navbar-nav li {
+  opacity: 0;
+}
+/* line 106, ../sass/overrides/_jd-navbar.scss */
 .page-about .navbar-nav > li > a {
   color: #e0e0e0;
-  opacity: 0;
 }
