@@ -19,15 +19,22 @@
 		border: none;
 		margin-bottom: 0;
 	}
-	.flikgift-balloons {
-		margin-top: -3em;
-	}
-	footer {
-		height: 422px;
+	// .flikgift-balloons {
+	// 	margin-top: -3em;
+	// }
+	.casestudy-section.section-supersized {
+		padding-bottom: 0;
+		
+		.section-description {
+			margin-bottom: 1em;
+		}
+		.casestudy-section-image {
+			margin-bottom: 0;
+		}
 	}
 	.work-group {
 		padding-top: 0;
 		padding-bottom: 0;
-		margin-bottom: 422px;
+		margin-bottom: 328px;
 	}
 }

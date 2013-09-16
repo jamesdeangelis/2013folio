@@ -36,7 +36,7 @@ body {
 	padding-bottom: 7em;
 	position: relative;
 	z-index: 300;
-	margin-bottom: 500px;
+	margin-bottom: 450px;
 	background-color: $gray-darker;
 	overflow: hidden;
 }
@@ -72,10 +72,12 @@ body {
 	&:hover {
 		opacity: 1;
 	}
-
 	h3 {
 		position: absolute;
 		bottom: 0.7em;
+	}
+	i {
+		font-size: 2em;
 	}
 }
 
@@ -110,13 +112,6 @@ body {
 
 	p {
 		color: $gray-blue;
-	}
-}
-.casestudy-section.section-supersized {
-	padding-bottom: 0;
-
-	.casestudy-section-image {
-		margin-bottom: 0;
 	}
 }
 

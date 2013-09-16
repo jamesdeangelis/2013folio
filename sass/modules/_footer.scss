@@ -3,10 +3,10 @@ footer {
 	bottom: 0;
 	left: 0;
 	z-index: 1;
-	height: 500px;
+	height: 450px;
 	width: 100%;
 	background-color: #13131a;
-	padding: 2em 0;
+	padding: 1em 0 2em;
 
 	h4 {
 		color: $gray-dark;
@@ -14,9 +14,12 @@ footer {
 	p {
 		color: $gray;
 	}
+	.work-menu-item {
+		margin-left: 0;
+	}
 	.footer-contactme {
 		// margin: 2em 0 0;
-		// padding: 1.5em 0 0;
+		padding: 1.5em 0 0;
 		// border-top: 1px solid $gray-line;
 		overflow: hidden;
 
@@ -26,5 +29,18 @@ footer {
 			top: 2px;
 			padding-right: 5px;
 		}
+	}
+	.icon-mail {
+		font-size: 1em;
+	}
+}
+
+.case-footer {
+	height: 328px;
+
+	h2 {
+		position: relative;
+		z-index: 100;
+		margin-bottom: 0
 	}
 }

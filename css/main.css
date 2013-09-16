@@ -7503,7 +7503,7 @@ body {
   padding-bottom: 7em;
   position: relative;
   z-index: 300;
-  margin-bottom: 500px;
+  margin-bottom: 450px;
   background-color: #191c22;
   overflow: hidden;
 }
@@ -7552,13 +7552,17 @@ body {
 .work-overlay:hover {
   opacity: 1;
 }
-/* line 76, ../sass/modules/_general.scss */
+/* line 75, ../sass/modules/_general.scss */
 .work-overlay h3 {
   position: absolute;
   bottom: 0.7em;
 }
+/* line 79, ../sass/modules/_general.scss */
+.work-overlay i {
+  font-size: 2em;
+}
 
-/* line 82, ../sass/modules/_general.scss */
+/* line 84, ../sass/modules/_general.scss */
 .work-casestudy-header {
   width: 100%;
   background-size: cover;
@@ -7568,21 +7572,21 @@ body {
   box-shadow: inset 0 -90px 90px rgba(0, 0, 0, 0.75);
 }
 
-/* line 90, ../sass/modules/_general.scss */
+/* line 92, ../sass/modules/_general.scss */
 .casestudy-heading-group {
   position: absolute;
   bottom: 2em;
 }
-/* line 93, ../sass/modules/_general.scss */
+/* line 95, ../sass/modules/_general.scss */
 .casestudy-heading-group h1 {
   margin-top: 0;
 }
-/* line 96, ../sass/modules/_general.scss */
+/* line 98, ../sass/modules/_general.scss */
 .casestudy-heading-group h4 {
   color: rgba(255, 255, 255, 0.5);
 }
 
-/* line 101, ../sass/modules/_general.scss */
+/* line 103, ../sass/modules/_general.scss */
 .casestudy-section {
   border-bottom: 1px solid #272a2f;
   margin: 3em 0 3em;
@@ -7590,41 +7594,32 @@ body {
   overflow: hidden;
 }
 
-/* line 107, ../sass/modules/_general.scss */
+/* line 109, ../sass/modules/_general.scss */
 .casestudy-section.section-first {
   margin-top: 0;
   padding-top: 4em;
 }
-/* line 111, ../sass/modules/_general.scss */
+/* line 113, ../sass/modules/_general.scss */
 .casestudy-section.section-first p {
   color: #e3edff;
 }
 
-/* line 115, ../sass/modules/_general.scss */
-.casestudy-section.section-supersized {
-  padding-bottom: 0;
-}
 /* line 118, ../sass/modules/_general.scss */
-.casestudy-section.section-supersized .casestudy-section-image {
-  margin-bottom: 0;
-}
-
-/* line 123, ../sass/modules/_general.scss */
 .section-first {
   padding-bottom: 4em;
 }
 
-/* line 127, ../sass/modules/_general.scss */
+/* line 122, ../sass/modules/_general.scss */
 .casestudy-section-image {
   margin-bottom: 4em;
 }
 
-/* line 131, ../sass/modules/_general.scss */
+/* line 126, ../sass/modules/_general.scss */
 .section-description {
   margin-bottom: 4em;
 }
 
-/* line 134, ../sass/modules/_general.scss */
+/* line 129, ../sass/modules/_general.scss */
 .image-caption {
   border-bottom: 1px solid #272a2f;
   padding: .3em 0 0;
@@ -7769,43 +7764,40 @@ body {
 /* line 43, ../sass/modules/_menu.scss */
 .work-menu-item {
   margin-left: -3.2em;
-  padding: 2em 0;
+  padding: 1.5em 0;
   border-bottom: 1px solid #272a2f;
   transition: all .3s ease;
   position: relative;
 }
 /* line 50, ../sass/modules/_menu.scss */
-.work-menu-item .menu-item-link {
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  cursor: pointer;
-  z-index: 2000;
-}
-/* line 58, ../sass/modules/_menu.scss */
 .work-menu-item h3 {
   margin-top: 0;
 }
-/* line 61, ../sass/modules/_menu.scss */
+/* line 53, ../sass/modules/_menu.scss */
 .work-menu-item h4 {
   margin-bottom: .5em;
 }
-/* line 64, ../sass/modules/_menu.scss */
-.work-menu-item .menu-item-description {
-  padding-top: 1.8em;
-}
-/* line 67, ../sass/modules/_menu.scss */
+/* line 59, ../sass/modules/_menu.scss */
 .work-menu-item .menu-item-arrow {
   padding-top: 1.5em;
 }
-/* line 70, ../sass/modules/_menu.scss */
+/* line 61, ../sass/modules/_menu.scss */
+.work-menu-item .menu-item-arrow i {
+  margin-left: -0.8em;
+}
+/* line 65, ../sass/modules/_menu.scss */
 .work-menu-item .icon-arrow-thin-right {
   font-size: 2em;
 }
-/* line 73, ../sass/modules/_menu.scss */
+/* line 68, ../sass/modules/_menu.scss */
 .work-menu-item:hover {
   background-color: rgba(31, 35, 43, 0.95);
+  cursor: pointer;
+}
+/* line 72, ../sass/modules/_menu.scss */
+.work-menu-item img {
+  float: left;
+  margin-right: 1.5em;
 }
 
 /* line 1, ../sass/modules/_footer.scss */
@@ -7814,10 +7806,10 @@ footer {
   bottom: 0;
   left: 0;
   z-index: 1;
-  height: 500px;
+  height: 450px;
   width: 100%;
   background-color: #13131a;
-  padding: 2em 0;
+  padding: 1em 0 2em;
 }
 /* line 11, ../sass/modules/_footer.scss */
 footer h4 {
@@ -7828,15 +7820,35 @@ footer p {
   color: #737c7f;
 }
 /* line 17, ../sass/modules/_footer.scss */
+footer .work-menu-item {
+  margin-left: 0;
+}
+/* line 20, ../sass/modules/_footer.scss */
 footer .footer-contactme {
+  padding: 1.5em 0 0;
   overflow: hidden;
 }
-/* line 23, ../sass/modules/_footer.scss */
+/* line 26, ../sass/modules/_footer.scss */
 footer .footer-contactme i {
   color: #2980b9;
   position: relative;
   top: 2px;
   padding-right: 5px;
+}
+/* line 33, ../sass/modules/_footer.scss */
+footer .icon-mail {
+  font-size: 1em;
+}
+
+/* line 38, ../sass/modules/_footer.scss */
+.case-footer {
+  height: 328px;
+}
+/* line 41, ../sass/modules/_footer.scss */
+.case-footer h2 {
+  position: relative;
+  z-index: 100;
+  margin-bottom: 0;
 }
 
 /* line 2, ../sass/modules/_flikgift.scss */
@@ -7863,19 +7875,23 @@ footer .footer-contactme i {
   border: none;
   margin-bottom: 0;
 }
-/* line 22, ../sass/modules/_flikgift.scss */
-.flikgift .flikgift-balloons {
-  margin-top: -3em;
-}
 /* line 25, ../sass/modules/_flikgift.scss */
-.flikgift footer {
-  height: 422px;
+.flikgift .casestudy-section.section-supersized {
+  padding-bottom: 0;
 }
 /* line 28, ../sass/modules/_flikgift.scss */
+.flikgift .casestudy-section.section-supersized .section-description {
+  margin-bottom: 1em;
+}
+/* line 31, ../sass/modules/_flikgift.scss */
+.flikgift .casestudy-section.section-supersized .casestudy-section-image {
+  margin-bottom: 0;
+}
+/* line 35, ../sass/modules/_flikgift.scss */
 .flikgift .work-group {
   padding-top: 0;
   padding-bottom: 0;
-  margin-bottom: 422px;
+  margin-bottom: 328px;
 }
 
 @font-face {
