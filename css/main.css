@@ -8384,7 +8384,7 @@ footer .icon-mail {
 
 /* line 2, ../sass/modules/_flikgift.scss */
 .flikgift .work-casestudy-header {
-  background: black url(../../img/work/flikgift/bg_header.jpg) no-repeat top center;
+  background: black url(../img/work/flikgift/bg_header.jpg) no-repeat top center;
   background-size: cover;
   -webkit-box-shadow: inset 0 -90px 90px rgba(0, 0, 0, 0.75);
   box-shadow: inset 0 -90px 90px rgba(0, 0, 0, 0.75);
@@ -8423,13 +8423,13 @@ footer .icon-mail {
 
 /* line 2, ../sass/modules/_lawpath.scss */
 .lawpath .work-casestudy-header {
-  background: black url(../../img/work/lawpath/bg_header.jpg) no-repeat top center;
+  background: black url(../img/work/lawpath/bg_header.jpg) no-repeat top center;
   background-size: cover;
 }
 
 /* line 2, ../sass/modules/_dayrise.scss */
 .dayrise .work-casestudy-header {
-  background: black url(../../img/work/dayrise/bg_header.jpg) no-repeat top center;
+  background: black url(../img/work/dayrise/bg_header.jpg) no-repeat top center;
   background-size: cover;
 }
 /* line 7, ../sass/modules/_dayrise.scss */
@@ -8447,19 +8447,19 @@ footer .icon-mail {
 
 /* line 2, ../sass/modules/_pollenizer.scss */
 .pollenizer .work-casestudy-header {
-  background: black url(../../img/work/pollenizer/bg_header.jpg) no-repeat top center;
+  background: black url(../img/work/pollenizer/bg_header.jpg) no-repeat top center;
   background-size: cover;
 }
 
 /* line 2, ../sass/modules/_pygg.scss */
 .pygg .work-casestudy-header {
-  background: black url(../../img/work/pygg/bg_header.jpg) no-repeat top center;
+  background: black url(../img/work/pygg/bg_header.jpg) no-repeat top center;
   background-size: cover;
 }
 
 /* line 2, ../sass/modules/_misc.scss */
 .misc .work-casestudy-header {
-  background: black url(../../img/work/misc/bg_header.png) no-repeat top center;
+  background: black url(../img/work/misc/bg_header.png) no-repeat top center;
   background-size: cover;
 }
 
@@ -8585,14 +8585,14 @@ p {
 
 /* line 50, ../sass/overrides/_jd-jumbotron.scss */
 .twitter:after {
-  background-image: url(../../img/twitter.svg);
+  background-image: url(../img/twitter.svg);
   left: 0.15em;
   top: 0.05em;
 }
 
 /* line 56, ../sass/overrides/_jd-jumbotron.scss */
 .dribbble:after {
-  background-image: url(../../img/dribbble.svg);
+  background-image: url(../img/dribbble.svg);
   left: 0.15em;
   top: 0.05em;
   padding-right: .8em;
@@ -8600,7 +8600,7 @@ p {
 
 /* line 62, ../sass/overrides/_jd-jumbotron.scss */
 .linkedin:after {
-  background-image: url(../../img/linkedin.svg);
+  background-image: url(../img/linkedin.svg);
   left: 0.15em;
   top: 0.05em;
 }
@@ -8672,7 +8672,7 @@ p {
   margin-left: 5px;
   position: relative;
   top: 3px;
-  background-image: url(../../img/social.svg);
+  background-image: url(../img/social.svg);
   background-repeat: no-repeat;
   -webkit-transition: all .4s ease;
   -moz-transition: all .4s ease;
