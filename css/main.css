@@ -7614,22 +7614,23 @@ body {
   overflow: hidden;
   position: absolute;
   bottom: 0;
+  background-color: transparent;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
   background-color: #2980b9;
-  -webkit-transition: all .3s ease;
-  -moz-transition: all .3s ease;
-  -ms-transition: all .3s ease;
-  -o-transition: all .3s ease;
-  transition: all .3s ease;
 }
-/* line 53, ../sass/modules/_about.scss */
+/* line 54, ../sass/modules/_about.scss */
 .about-footer:hover {
   background-color: #2e8ece;
 }
-/* line 57, ../sass/modules/_about.scss */
+/* line 58, ../sass/modules/_about.scss */
 .about-footer .about-footer-inner {
   padding: 2em 0;
 }
-/* line 61, ../sass/modules/_about.scss */
+/* line 62, ../sass/modules/_about.scss */
 .about-footer .about-footer-link {
   position: absolute;
   display: block;
@@ -7638,19 +7639,20 @@ body {
   z-index: 100;
   cursor: pointer;
 }
-/* line 71, ../sass/modules/_about.scss */
+/* line 72, ../sass/modules/_about.scss */
 .about-footer h3,
 .about-footer .icon {
   color: #fff;
   margin: 0;
   padding: 0;
+  font-size: 1.67em;
 }
-/* line 76, ../sass/modules/_about.scss */
+/* line 78, ../sass/modules/_about.scss */
 .about-footer .icon {
-  color: #94c0dc;
   position: relative;
-  left: .3em;
-  top: .1em;
+  left: .4em;
+  top: .15em;
+  font-size: inherit;
 }
 
 /* line 1, ../sass/modules/_menu.scss */
@@ -7844,23 +7846,23 @@ footer .footer-contactme {
   padding: 1.5em 0 0;
   overflow: hidden;
 }
-/* line 26, ../sass/modules/_footer.scss */
+/* line 24, ../sass/modules/_footer.scss */
 footer .footer-contactme i {
   color: #2980b9;
   position: relative;
   top: 2px;
   padding-right: 5px;
 }
-/* line 33, ../sass/modules/_footer.scss */
+/* line 31, ../sass/modules/_footer.scss */
 footer .icon-mail {
   font-size: 1em;
 }
 
-/* line 38, ../sass/modules/_footer.scss */
+/* line 36, ../sass/modules/_footer.scss */
 .case-footer {
   height: 328px;
 }
-/* line 41, ../sass/modules/_footer.scss */
+/* line 39, ../sass/modules/_footer.scss */
 .case-footer h2 {
   position: relative;
   z-index: 100;
