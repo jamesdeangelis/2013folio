@@ -333,7 +333,7 @@
                 <div class="row">
                   <div class="col-md-7">
                     <h2>Super sized gifting</h2>
-                    <p class="section-description">Flikgift enabled friends and family to chip-in on gifts solving the problem many offices and group gifters have when they want to combine funds. Flikgift magnified this process by adding in incremental amounts when the gift got close to it’s target. We found having a clear goal also encourage participants to chip-in again to reach the target.</p>
+                    <p class="section-description">Flikgift enabled friends and family to chip-in on gifts solving the problem many offices and group gifters have when they want to combine funds. Flikgift magnified this process by adding incremental amounts of money when the gift got close to it’s target. We found having a clear goal also encouraged participants to chip-in again to reach the target.</p>
                   </div>
                 </div>
 
@@ -354,7 +354,7 @@
                 <div class="row">
                   <div class="col-md-7">
                     <h2>The Birthday Clock</h2>
-                    <p class="section-description">The trouble with birthdays is you often forget them or find out too late to find the person a gift. We created a <a href="#"> Chrome extension</a> that replaced the boring tab default with photos of their friends and birthdays and connected them instantly to Flikgift.</p>
+                    <p class="section-description">The trouble with birthdays is you often forget them or find out too late to find the person a gift. We created a <a href="#"> Chrome extension</a> that replaced the boring tab default with photos of their friends and birthdays and connected them instantly to Flikgift to purchase and send a gift.</p>
                   </div>
                   <div class="col-md-3 col-md-offset-1">
                     <img src="img/grey.gif" data-original="img/work/flikgift/bclock_icon.png" class="img-responsive lazy hidden-sm hidden-xs" alt="" width="206" height="208">
@@ -453,6 +453,8 @@
         $("img.lazy").lazyload({ 
           effect : "fadeIn"
         });
+
+        // Update the social icons every 5 seconds
         setInterval(function(){
           var classes = ['navbar-brand-twitter','navbar-brand-dribbble','navbar-brand-linkedin'];
           $("#social-switch").each(function(){
@@ -460,6 +462,8 @@
             });
         },5000);
       });
+
+      // Make menu divs clickable
       $(document).delegate(".work-menu-item", "click", function() {
         window.location = $(this).find("a").attr("href");
       });
@@ -482,5 +486,6 @@
         r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
         ga('create','UA-XXXXX-X');ga('send','pageview');
     </script>
+
   </body>
 </html>
