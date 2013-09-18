@@ -1,5 +1,7 @@
 .menu-open {
+	position: relative;
 	overflow: hidden;
+	-webkit-overflow-scrolling: touch;
 
 	.icon-view-thumb:before {
 		content: "\e025";
@@ -73,4 +75,16 @@
 		float: left;
 		margin-right: 1.5em;
 	}
+}
+
+@media screen and (max-width: $screen-phone ) {
+	.work-menu-item {
+		margin-left: 0;
+		padding: 0.5em 0;
+	}
+	.work-menu {
+		width: 105%;
+		padding-top: 6em;
+	}
+
 }

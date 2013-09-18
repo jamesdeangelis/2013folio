@@ -3,3 +3,9 @@
 .img-rounded {
   border-radius: $border-radius-base;
 }
+
+@media screen and (max-width: $screen-phone ) {
+	.img-rounded {
+	  border-radius: $border-radius-small;
+	}
+}

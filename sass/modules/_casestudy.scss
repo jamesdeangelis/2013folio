@@ -63,3 +63,44 @@
 	margin-bottom: 0;
 	border: none;
 }
+
+@media screen and (max-width: $screen-phone ) {
+	.work-group.casestudy {
+		margin-top: 6em;
+	}
+	.work-casestudy-header {
+		height: 215px;
+	}
+	.flikgift,
+	.lawpath,
+	.dayrise,
+	.pollenizer,
+	.pygg,
+	.misc {
+		.work-group {
+			margin-bottom: 3em;
+		}
+	}
+	.casestudy-section {
+		margin: 0 0 1em;
+		padding-bottom: 1em;
+	}
+	.section-description,
+	.casestudy-section-image {
+		margin-bottom: 2em;
+	}
+	.casestudy-section.section-first {
+		padding: 3em 0 1.5em;
+	}
+	.casestudy-heading-group {
+		bottom: 1em;
+	}
+	h1 {
+		margin-bottom: .2em;
+	}
+}
+
+
+
+
+

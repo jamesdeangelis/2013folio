@@ -25,7 +25,7 @@
 // @import "vendor/bootstrap/buttons";
 
 // Components
-// @import "vendor/bootstrap/component-animations";
+@import "vendor/bootstrap/component-animations";
 // @import "vendor/bootstrap/glyphicons";
 // @import "vendor/bootstrap/dropdowns";
 // @import "vendor/bootstrap/button-groups";
@@ -36,7 +36,7 @@
 // @import "vendor/bootstrap/pagination";
 // @import "vendor/bootstrap/pager";
 // @import "vendor/bootstrap/labels";
-// @import "vendor/bootstrap/badges";
+// @import "vendor/bootstrap/badges";	
 @import "vendor/bootstrap/jumbotron";
 // @import "vendor/bootstrap/thumbnails";	
 // @import "vendor/bootstrap/alerts";
@@ -56,6 +56,7 @@
 // Utility classes
 @import "vendor/bootstrap/utilities";
 @import "vendor/bootstrap/responsive-utilities"; 
+
 
 /* 
 	My shiz
@@ -80,6 +81,7 @@
 @import "overrides/_jd-type";
 @import "overrides/_jd-jumbotron";
 @import "overrides/_jd-navbar";
+@import "overrides/_jd-grid";
 
 
 

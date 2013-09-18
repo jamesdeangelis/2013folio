@@ -31,3 +31,9 @@
 		}
 	}
 }
+
+@media screen and (max-width: $screen-phone ) {
+	.flikgift .section-birthdayclock {
+		padding-top: 0;
+	}
+}

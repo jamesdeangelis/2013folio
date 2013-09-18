@@ -13,6 +13,7 @@
 .page-work {
 	overflow-y: scroll;
 	overflow-x: hidden;
+
 	.about {
 		-webkit-transform: translate3d(0,-100%,0);
 		-moz-transform: translate3d(0,-100%,0);
@@ -23,7 +24,9 @@
 }
 
 .page-about {
+	position: relative;
 	overflow: hidden;
+
 	.about {
 		-webkit-transform: translate3d(0,0,0);
 		-moz-transform: translate3d(0,0,0);

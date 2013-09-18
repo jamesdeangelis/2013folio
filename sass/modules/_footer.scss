@@ -38,7 +38,35 @@ footer {
 
 	h2 {
 		position: relative;
-		z-index: 100;
+		z-index: 100; 
 		margin-bottom: 0
 	}
+}
+
+@media screen and (max-width: $screen-phone ) {
+	footer {
+		position: static;
+		height: auto;
+
+		.icon-mail {
+			font-size: 3em;
+			padding: 0;
+			margin-bottom: 0;
+			line-height: 0;
+			top: 0;
+		}
+		.footer-mobile {
+			h2 {
+				margin-top: .3em;
+			}
+		}
+	}
+	.case-footer {
+		height: auto;
+
+		h2 {
+			margin-bottom: .2em;
+		}
+	}
+
 }
