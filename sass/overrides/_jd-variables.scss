@@ -131,7 +131,7 @@ $zindex-modal:             1050;
 // --------------------------------------------------
 
 // Extra small screen / phone
-$screen-xs:                  568px;
+$screen-xs:                  480px;
 $screen-phone:               $screen-xs;
 
 // Small screen / tablet
@@ -160,7 +160,7 @@ $grid-columns:              12;
 // Padding, to be divided by two and applied to the left and right of all columns
 $grid-gutter-width:         40px;
 // Point at which the navbar stops collapsing
-$grid-float-breakpoint:     $screen-tablet;
+$grid-float-breakpoint:     $screen-phone;
 
 
 // Navbar
@@ -275,13 +275,13 @@ $component-offset-horizontal: 180px;
 // Container sizes
 // --------------------------------------------------
 
-// Small screen / tablet
-$container-tablet:            ((480px + $grid-gutter-width));
+
+$container-tablet:            ((720px + $grid-gutter-width)) !default;
 
 // Medium screen / desktop
-$container-desktop:           ((900px + $grid-gutter-width));
+$container-desktop:           ((940px + $grid-gutter-width)) !default;
 
 // Large screen / wide desktop
-$container-lg-desktop:        ((980px + $grid-gutter-width));
+$container-lg-desktop:        ((1140px + $grid-gutter-width)) !default;
 
 

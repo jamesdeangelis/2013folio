@@ -80,6 +80,10 @@ body {
 	}
 }
 
+.img-responsive {
+	width: 100%;
+}
+
 @media screen and (max-width: $screen-phone ) {
 	body {
 		font-size: 10px;
@@ -99,6 +103,29 @@ body {
 		display: none;
 	}
 }
+
+
+@media screen and (min-width: $screen-phone) and (max-width: $screen-tablet ) {
+	.work-overlay {
+		display: none;
+	}
+	body {
+		font-size: 14px;
+	}
+	.work-row {
+		margin-bottom: 1em;
+		padding: 0 10px 0 10px;
+	}
+	.work-group-heading {
+		margin-bottom: .3em;
+	}
+	.work-group {
+		margin-bottom: 0;
+		padding-bottom: 6em;
+	}
+}
+
+
 
 
 

@@ -64,7 +64,7 @@
 	border: none;
 }
 
-@media screen and (max-width: $screen-phone ) {
+@media screen and (max-width: $screen-phone ) and (max-width: $screen-tablet ) {
 	.work-group.casestudy {
 		margin-top: 6em;
 	}
@@ -100,6 +100,18 @@
 	}
 }
 
+@media screen and (max-width: $screen-tablet ) {
+	.flikgift,
+	.lawpath,
+	.dayrise,
+	.pollenizer,
+	.pygg,
+	.misc {
+		.work-group {
+			margin-bottom: 3em;
+		}
+	}
+}
 
 
 
