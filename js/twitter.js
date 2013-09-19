@@ -16,36 +16,6 @@ f[a].setAttribute("aria-label",b);if(e[a].innerText)if(v)f[a].innerText=b;else{v
 h[a]+'" class="twitter_fav_icon">Favorite</a></p>');c.push(b);a++}if(null==w){e=c.length;g=0;f=document.getElementById(y);for(h="<ul>";g<e;)h+="<li>"+c[g]+"</li>",g++;f.innerHTML=h+"</ul>"}else w(c);t=!1;0<k.length&&(twitterFetcher.fetch(k[0].id,k[0].domId,k[0].maxTweets,k[0].enableLinks,k[0].showUser,k[0].showTime,k[0].dateFunction,k[0].showRt,k[0].customCallback,k[0].showInteraction),k.splice(0,1))}}}();
 
 
-
-/**
- * How to use fetch function:
- * @param {string} Your Twitter widget ID.
- * @param {string} The ID of the DOM element you want to write results to. 
- * @param {int} Optional - the maximum number of tweets you want returned. Must
- *     be a number between 1 and 20.
- * @param {boolean} Optional - set true if you want urls and hash
-       tags to be hyperlinked!
- * @param {boolean} Optional - Set false if you dont want user photo /
- *     name for tweet to show.
- * @param {boolean} Optional - Set false if you dont want time of tweet
- *     to show.
- * @param {function/string} Optional - A function you can specify to format
- *     tweet date/time however you like. This function takes a JavaScript date
- *     as a parameter and returns a String representation of that date.
- *     Alternatively you may specify the string 'default' to leave it with
- *     Twitter's default renderings.
- * @param {boolean} Optional - Show retweets or not. Set false to not show.
- * @param {function/string} Optional - A function to call when data is ready. It
- *     also passes the data to this function should you wish to manipulate it
- *     yourself before outputting. If you specify this parameter you  must
- *     output data yourself!
- * @param {boolean} Optional - Show links for reply, retweet, favourite. Set false to not show.
- */
-
-// ##### Simple example 1 #####
-// A simple example to get my latest tweet and write to a HTML element with
-// id "tweets". Also automatically hyperlinks URLS and user mentions and
-// hashtags.
 twitterFetcher.fetch('380566550027059200', 'mytweets', 1, true);
 
 
@@ -56,24 +26,4 @@ twitterFetcher.fetch('380566550027059200', 'mytweets', 1, true);
 // of a Date object.
 function dateFormatter(date) {
   return date.toTimeString();
-}
-
-
-// ##### Advanced example 2 #####
-// Similar as previous, except this time we pass a custom function to render the
-// tweets ourself! Useful if you need to know exactly when data has returned or
-// if you need full control over the output.
-twitterFetcher.fetch('345690956013633536', '', 3, true, true, true, '', false, handleTweets, false);
-
-function handleTweets(tweets){
-    var x = tweets.length;
-    var n = 0;
-    var element = document.getElementById('example4');
-    var html = '<ul>';
-    while(n < x) {
-      html += '<li>' + tweets[n] + '</li>';
-      n++;
-    }
-    html += '</ul>';
-    element.innerHTML = html;
 }

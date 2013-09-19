@@ -11,11 +11,16 @@ $(document).ready(function() {
 
   // Update the social icons every 5 seconds
   setInterval(function(){
+
     var classes = ['navbar-brand-twitter','navbar-brand-dribbble','navbar-brand-linkedin'];
+    var links = ["http://dribbble.com/jamesdeangelis","http://au.linkedin.com/in/jamesdeangelis/", "http://twitter.com/jamesdeangelis"];
+
     $("#social-switch").each(function(){
         this.className = classes[($.inArray(this.className, classes)+1)%classes.length];
+        this.href = links [($.inArray(this.href, links)+1)%links.length];
       });
   },5000);
+  
 });
 
 // Make menu divs clickable
