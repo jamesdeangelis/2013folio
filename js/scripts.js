@@ -29,3 +29,18 @@ $('body').delegate('#page-wrapper','touchmove',function(e){
 }).delegate('.work','touchmove',function(){
   e.stopPropagation();
 });
+
+// Dribbble feed
+$(document).ready(function () {   
+  $.jribbble.getShotsByPlayerId('jamesdeangelis', function (playerShots) {
+      var html = [];
+  
+      $.each(playerShots.shots, function (i, shot) {
+          html.push('<a href="' + shot.url + '">');
+          html.push('<img src="' + shot.image_url + '" ');
+          html.push('alt="' + shot.title + '"></a></li>');
+      });
+  
+      $('#dribbble-hold').html(html.join(''));
+  }, {page: 1, per_page: 1});
+});
