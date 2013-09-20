@@ -13,6 +13,7 @@
 .page-work {
 	overflow-y: scroll;
 	overflow-x: hidden;
+
 	.about {
 		-webkit-transform: translate3d(0,-100%,0);
 		-moz-transform: translate3d(0,-100%,0);
@@ -23,7 +24,9 @@
 }
 
 .page-about {
+	position: relative;
 	overflow: hidden;
+
 	.about {
 		-webkit-transform: translate3d(0,0,0);
 		-moz-transform: translate3d(0,0,0);
@@ -43,15 +46,16 @@
 	overflow: hidden;
 	position: absolute;
 	bottom: 0;
+	background-color: transparent;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
 	background-color: $brand-primary;
-	-webkit-transition: all .3s ease;
-	-moz-transition: all .3s ease;
-	-ms-transition: all .3s ease;
-	-o-transition: all .3s ease;
-	transition: all .3s ease;
 	
 	&:hover {
-		background-color: lighten($brand-primary,5%);	
+		background-color: lighten($brand-primary,5%);		
 	}
 
 	.about-footer-inner {
@@ -72,11 +76,12 @@
 		color: #fff;
 		margin: 0;
 		padding: 0;
+		font-size: 1.67em;
 	}
 	.icon {
-		color: #94c0dc;
 		position: relative;
-		left: .3em;
-		top: .1em;
+		left: .4em;
+		top: .15em;
+		font-size: inherit;
 	}
 }

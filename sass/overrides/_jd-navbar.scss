@@ -14,12 +14,22 @@
 		letter-spacing: 1px;
 		text-rendering: optimizeLegibility;
 		-webkit-font-smoothing: antialiased;
-	}
 
+		.icon-mail {
+			font-size: 22px;
+			top: 0.13em
+		}
+		.icon-information {
+			font-size: 22px;
+			top: 0.13em
+		}
+	}
 	.navbar-nav {
+		li {
+			opacity: 1;
+		}
 	    > li > a {
 	      color: $navbar-default-link-color;
-	      opacity: 1;
 
 	      &:hover,
 	      &:focus {
@@ -27,6 +37,12 @@
 	        background-color: transparent;
 	      }
 		}
+	}
+	.nav-pipe {
+		height: 26px;
+		margin-top: 28px;
+		border-right: 1px solid $gray-line;
+		margin: 28px 5px 0;
 	}
 }
 
@@ -54,7 +70,7 @@
 	margin-left: 5px;
 	position: relative;
 	top: 3px;
-	background-image: url(../../img/social.svg);
+	background-image: url(../img/social.svg);
 	background-repeat: no-repeat;
 	-webkit-transition: all .4s ease;
 	-moz-transition: all .4s ease;
@@ -72,6 +88,7 @@
 }
 .navbar-brand-linkedin {
 	background-position: 0 -62px;
+	top: 2px;
 }
 
 .icon-view-thumb {
@@ -89,9 +106,39 @@
 		background-color: #f7f7f7;
 	}
 	.navbar-nav {
+		li {
+			opacity: 0;
+		}
 	    > li > a {
 	      color: $gray-lighter;
-	      opacity: 0;
 	  }
 	}
 }
+
+.container>.navbar-header, .container>.navbar-collapse {
+	margin-right: -40px; 
+}
+
+@media screen and (max-width: $screen-phone ) {
+ 	.navbar {
+ 		min-height: 60px;
+ 		height: 60px;
+ 	}
+ 	.navbar-nav {
+ 		margin: 8px 0;
+ 	}
+ 	.navbar-brand {
+ 		padding: 18px 20px;
+ 		font-size: 16px;
+ 	}
+ 	.navbar-header {
+ 		float: left;
+ 		width: 75%;
+ 	}
+ 	.navbar-collapse {
+ 		border: none;
+ 		box-shadow: none;
+ 		margin-right: -36px !important;
+ 	} 
+}
+
