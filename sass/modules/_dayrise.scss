@@ -14,6 +14,10 @@
 	.clipboard {
 		img {
 			margin-top: 11em;
+			@media screen and (min-width: $screen-lg-desktop ) {
+				margin-top: 9em;
+			}
+
 		}
 	}
 }
